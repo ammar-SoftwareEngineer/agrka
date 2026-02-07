@@ -389,7 +389,7 @@ body {
 
       &:hover {
         font-weight: bold;
-       
+
       }
     }
 
@@ -413,13 +413,6 @@ body[dir="rtl"] .navbar .container {
 .hero {
   position: relative;
   overflow: hidden;
-  min-height: 100vh;
-
-  &-slider-wrapper {
-    position: absolute;
-    inset: 0;
-  }
-
 
 
   .swiper {
@@ -450,20 +443,6 @@ body[dir="rtl"] .navbar .container {
     }
   }
 
-  .text-box {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    padding: 40px 20px;
-    color: #fff;
-    z-index: 5;
-    h2 {
-      font-size: 2.5rem;
-      font-weight: 700;
-      font-family: "Playfair Display", serif;
-    }
-  }
 
 
 }
@@ -477,79 +456,32 @@ body[dir="rtl"] .hero .hero-content-overlay {
 }
 
 .hero-mobile {
+
   .swiper {
-    .swiper-wrapper {
-      .swiper-slide {
-        height: 60vh;
-        position: relative;
-        transition: all 0.4s ease;
-        cursor: pointer;
 
-        img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-          cursor: pointer;
-        }
-      }
-    }
-  }
+    height: 60vh;
 
-  .swiper-pagination {
-    bottom: 30px !important;
+    .swiper-wrapper .swiper-slide {
 
-    .swiper-pagination-bullet {
-      background: rgba(255, 255, 255, 0.5);
-      opacity: 1;
-      width: 12px;
-      height: 12px;
-      margin: 0 10px !important;
-      transition: all 0.3s ease;
-      border-radius: 50px !important;
       position: relative;
+      overflow: hidden;
 
-      &::before {
-        content: "";
+      .slide-image {
         position: absolute;
-        border: 2.5px solid var(--second-color);
+        inset: 0;
+        transform: scale(1.05);
+        transition: transform 7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      }
+
+      &.swiper-slide-active .slide-image {
+        transform: scale(1.1);
+      }
+
+      img {
         width: 100%;
         height: 100%;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        border-radius: 50px !important;
-        padding: 10px;
+        object-fit: cover;
       }
-    }
-
-    .swiper-pagination-bullet-active {
-      background: var(--second-color);
-      height: 14px;
-      width: 14px;
-      border-radius: 50px !important;
-    }
-  }
-
-  .text-box {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    padding: 40px 20px;
-    color: #fff;
-    transition: all 0.4s ease;
-    z-index: 5;
-    background: linear-gradient(10deg,
-        rgba(0, 0, 0, 0.8) 0%,
-        rgba(0, 0, 0, 0.5) 40%,
-        rgba(255, 255, 255, 0.05) 100%);
-
-    h2 {
-      font-size: 1.5rem;
-      font-weight: 700;
-      margin: 15px 0;
-      transition: all 0.4s ease;
-      transform: translateY(-40px);
     }
   }
 }
