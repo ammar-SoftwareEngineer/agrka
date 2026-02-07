@@ -1,0 +1,64 @@
+{
+  "hero": {
+    "title": "Agricultural Greenhouses & Hydroponics",
+    "subtitle": "Modern farming solutions for sustainability and higher productivity"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "services": "Services",
+    "projects": "Our Projects",
+    "blogs": "Blog",
+    "gallery": "Gallery",
+    "contact": "Contact Us"
+  },
+  "header": {
+    "address": "Address - Egypt"
+  },
+  "footer": {
+    "description": "We specialize in agricultural greenhouses, hydroponic systems, and modern farming solutions.",
+    "quickLinks": "Quick Links",
+    "contact": "Contact Us",
+    "email": "Email",
+    "phone": "Phone",
+    "address": "Address",
+    "rights": "All rights reserved"
+  },
+  "about": {
+    "title": "About Us",
+    "heading": "Leaders in Greenhouses & Hydroponics",
+    "text1": "We provide integrated solutions for building agricultural greenhouses and designing hydroponic systems for maximum productivity and sustainability.",
+    "text2": "We work with farmers and investors to deliver controlled growing environments and modern irrigation and nutrition technologies."
+  },
+  "services": {
+    "title": "Our Services",
+    "heading": "Integrated Agricultural Solutions",
+    "greenhouses": "Agricultural Greenhouses",
+    "greenhousesDesc": "Design and build modern greenhouses tailored to climate and production needs.",
+    "hydroponics": "Hydroponic Systems",
+    "hydroponicsDesc": "Install soilless growing systems (NFT, DWC, etc.) with operational support.",
+    "consulting": "Agricultural Consulting",
+    "consultingDesc": "Feasibility studies and crop and system selection for your project.",
+    "maintenance": "Maintenance & Operation",
+    "maintenanceDesc": "Routine maintenance for greenhouses and systems to ensure continuous production."
+  },
+  "projects": {
+    "title": "Our Projects",
+    "heading": "Featured Completed Projects",
+    "viewAll": "View All"
+  },
+  "blogs": {
+    "title": "Blog",
+    "heading": "Latest Articles",
+    "readMore": "Read More"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "heading": "We're Here to Help",
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone",
+    "message": "Message",
+    "send": "Send"
+  }
+}

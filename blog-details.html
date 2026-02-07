@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logo.png"
+      type="image/x-icon"
+    />
+
+    <!-- files css -->
+    <link rel="stylesheet" href="./assets/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/media.css" />
+    <!-- google font  -->
+
+    <title>Karim Mounir</title>
+  </head>
+
+  <body>
+    <!-- 
+  ##################################################
+  #                   Loading                      #
+  ##################################################
+-->
+    <div class="loading" id="loader"></div>
+    <!-- 
+  ##################################################
+  #                   home                         #
+  ##################################################
+-->
+    <header class="header" id="header"></header>
+
+    <div id="hero-pages" data-title="Blogs" data-breadcrumb="Blogs"></div>
+    <!-- 
+  ##################################################
+  #                     Bolgs                      #
+  ##################################################
+-->
+
+  
+
+    <!-- 
+  ##################################################
+  #                  Footer                        #
+  ##################################################
+-->
+    <footer id="footer" class="shadow-lg"></footer>
+
+    <!-- 
+##################################################
+#                  SOCIAL ICONS                  #
+##################################################
+-->
+
+    <div
+      class="social-icon position-fixed bottom-0 d-flex flex-column gap-1 z-3 wow fadeInRight"
+      data-wow-duration="1s"
+    >
+      <a
+        href="tel:01210609965"
+        class="d-flex align-items-center justify-content-center"
+      >
+        <i class="fas fa-phone"></i>
+      </a>
+      <a
+        href="http://wa.me/+201210609965"
+        target="_blank"
+        class="d-flex align-items-center justify-content-center"
+      >
+        <i class="fab fa-whatsapp"></i>
+      </a>
+      <!-- Back To Top start -->
+    </div>
+    <div class="back-to-top wow fadeInRight">
+      <a id="back-top" class>
+        <i class="fas fa-long-arrow-up"></i>
+      </a>
+    </div>
+
+  <!-- js -->
+  <script src="./assets/js/jquery-3.7.1.min.js"></script>
+  <script>
+    $("#header").load("app/header.html");
+    $("#loader").load("app/loader.html");
+    $("#footer").load("app/footer.html");
+    $("#wating").load("app/wating-page.html");
+    $("#hero-pages").load("app/hero.html");
+  </script>
+
+  <script src="./assets/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/js/swiper-bundle.min.js"></script>
+  <script src="./assets/js/aos.js"></script>
+  <script src="./assets/js/main.js"></script>
+  </body>
+</html>
