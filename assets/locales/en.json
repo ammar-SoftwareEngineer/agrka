@@ -1,7 +1,10 @@
 {
   "hero": {
-    "title": "Agricultural Greenhouses & Hydroponics",
-    "subtitle": "Modern farming solutions for sustainability and higher productivity"
+    "title": "Smart Agricultural Solutions for a Sustainable Future",
+   
+    "desc": "At Agrika we provide integrated solutions in designing, implementing and managing modern agricultural projects, from traditional farming to greenhouses, hydroponics, agricultural marketing and specialized training, aimed at increasing production and achieving the highest return on investment with the latest technologies.",
+    "tagline": "Turn your idea into a successful agricultural project with us",
+    "cta": "Request a free consultation"
   },
   "nav": {
     "home": "Home",

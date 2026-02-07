@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./assets/css/all.min.css" />
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./assets/css/aos.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/media.css" />
 
@@ -35,7 +36,7 @@
 -->
     <header class="header" id="header"></header>
 
-    <div class="hero d-md-block d-none" id="heroDesktop"></div>
+    <div class="hero d-md-block d-none " id="heroDesktop"></div>
     <div class="hero-mobile d-md-none d-block" id="heroMobile"></div>
     <!-- 
   ##################################################
@@ -129,14 +130,18 @@
       $("#header").load("app/header.html");
       $("#footer").load("app/footer.html");
       $("#loader").load("app/loader.html");
+AOS.init({
+  duration: 1000,
+
+  easing: 'ease-in-out',
+  delay: 100,
+  offset: 100,
+});
 
     </script>
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/swiper-bundle.min.js"></script>
     <script src="./assets/js/main.js"></script>
-    <script src="./assets/js/gsap.min.js"></script>
-    <script src="./assets/js/ScrollTrigger.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@latest/dist/lenis.min.js"></script>
-    <script src="./assets/js/animation.js"></script>
+<script src="./assets/js/aos.js"></script>
   </body>
 </html>
