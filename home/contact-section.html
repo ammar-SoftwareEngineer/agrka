@@ -1,8 +1,9 @@
 <div class="contact-bg-overlay"></div>
 <div class="container position-relative">
-  <div class="header-section text-center mb-5">
-    <h2 class="mb-3 text-white" data-i18n="contact.title">اتصل بنا</h2>
-    <h3 class="text-white" data-i18n="contact.heading">نحن هنا لمساعدتك</h3>
+  <div class="header-section text-center mb-4">
+    <h2 class="mb-3 text-white" data-i18n="contact.title">تواصل معنا</h2>
+    <h3 class="text-white mb-2" data-i18n="contact.heading">شركة أجريكا — مصر</h3>
+   
   </div>
   <div class="row g-4">
     <div class="col-lg-4 col-md-6">
@@ -11,7 +12,7 @@
           <i class="fa-solid fa-envelope"></i>
         </div>
         <h6 class="mb-2" data-i18n="footer.email">البريد الإلكتروني</h6>
-        <a href="mailto:info@agrka.com" class="text-white opacity-85">info@agrka.com</a>
+        <span class="d-block text-white opacity-85 small" data-i18n="contact.emailPending">يُضاف البريد الإلكتروني لاحقًا</span>
       </div>
     </div>
     <div class="col-lg-4 col-md-6">
@@ -20,22 +21,24 @@
           <i class="fa-solid fa-phone"></i>
         </div>
         <h6 class="mb-2" data-i18n="footer.phone">الهاتف</h6>
-        <a href="tel:+201210609965" class="text-white opacity-85">+20 121 060 9965</a>
+        <a href="tel:+201123734611" class="d-block text-white opacity-85">0112 373 4611</a>
+        <a href="tel:+201068743552" class="d-block text-white opacity-85">0106 874 3552</a>
       </div>
     </div>
-    <div class="col-lg-4 col-md-6">
+    <div class="col-lg-4 col-md-6 mx-md-auto mx-lg-0">
       <div class="contact-info rounded-3 p-4 text-center text-white h-100">
         <div class="icon-circle mx-auto mb-2">
           <i class="fa-brands fa-whatsapp"></i>
         </div>
-        <h6 class="mb-2">واتساب</h6>
-        <a href="http://wa.me/+201210609965" target="_blank" class="text-white opacity-85">+20 121 060 9965</a>
+        <h6 class="mb-2">WhatsApp</h6>
+        <a href="https://wa.me/201123734611" target="_blank" rel="noopener noreferrer" class="d-block text-white opacity-85">0112 373 4611</a>
+        <a href="https://wa.me/201068743552" target="_blank" rel="noopener noreferrer" class="d-block text-white opacity-85">0106 874 3552</a>
       </div>
     </div>
   </div>
   <div class="row mt-5">
     <div class="col-lg-8 mx-auto">
-      <form class="contact-form-wrapper rounded-3 p-4 p-md-5">
+      <form id="contact-form" class="contact-form-wrapper rounded-3 p-4 p-md-5">
         <div class="row g-3">
           <div class="col-md-6">
             <label class="form-label text-white small" data-i18n="contact.name">الاسم</label>
@@ -43,7 +46,7 @@
           </div>
           <div class="col-md-6">
             <label class="form-label text-white small" data-i18n="contact.email">البريد الإلكتروني</label>
-            <input type="email" class="form-control" placeholder="" required />
+            <input type="email" class="form-control" placeholder="" />
           </div>
           <div class="col-12">
             <label class="form-label text-white small" data-i18n="contact.phone">رقم الهاتف</label>

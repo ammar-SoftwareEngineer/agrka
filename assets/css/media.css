@@ -1,11 +1,30 @@
 :root {
   --main-color: #586856;
-  --second-color: #7C984E;
-  
+  --second-color: #7c984e;
+  --third-color: #2a3527;
+
   --white-color: #ffffff;
   --background-color: rgba(192, 192, 192, 0.4);
   --placeholder-color: #a1a1a1;
-  --box-shadow: rgba(124, 152, 78, 0.3) 0px 9px 32px;
+  --box-shadow: rgba(124, 152, 78, 0.35) 0px 12px 40px;
+
+  --ink: #1a2218;
+  --text-muted: #5a6654;
+  --cream: #f5f8f2;
+  --cream-deep: #e6ede0;
+  --surface-dark: #121a12;
+  --surface-card: #1a2618;
+
+  --font-body: "Noto Sans Arabic", "DM Sans", system-ui, sans-serif;
+  --font-display: "Playfair Display", Georgia, "Noto Sans Arabic", serif;
+
+  --radius-sm: 6px;
+  --radius-md: 14px;
+  --radius-lg: 22px;
+
+  --shadow-soft: 0 24px 60px rgba(45, 60, 40, 0.1);
+  --shadow-lift: 0 20px 50px rgba(0, 0, 0, 0.22);
+  --shadow-glow: 0 0 0 1px rgba(124, 152, 78, 0.25), 0 24px 48px rgba(88, 104, 86, 0.2);
 }
 @media (max-width: 576px) {
 }

@@ -1,38 +1,65 @@
 <div class="container-fluid px-md-5 px-3">
   <div class="header-section text-center mb-5">
-    <h2 class="mb-3" data-i18n="projects.title">مشاريعنا</h2>
-    <h3 data-i18n="projects.heading">أبرز المشاريع المنفذة</h3>
+    <h2 class="mb-3" data-i18n="projects.title">مشروعاتنا</h2>
+    
+    <p class="mx-auto text-muted small" style="max-width: 40rem" data-i18n="projects.intro"></p>
   </div>
   <div class="row g-4 justify-content-center">
-    <div class="col-md-6 col-lg-4">
+    <div class="col-md-6 col-lg-4" data-aos="fade-up">
       <div class="card border-0 rounded-3 overflow-hidden shadow-sm h-100">
-        <img src="./assets/images/projects/project-1.jpg" class="card-img-top" alt="مشروع صوب" style="height: 280px; object-fit: cover;" onerror="this.src='https://placehold.co/600x280/1a2f1a/fff?text=Project+1'" />
+        <img
+          src="./assets/images/projects/project-1.jpg"
+          class="card-img-top"
+          alt=""
+          style="height: 280px; object-fit: cover"
+          onerror="this.src='https://placehold.co/600x280/1a2f1a/fff?text=Greenhouses'"
+        />
         <div class="card-body bg-dark text-white">
-          <h5 class="card-title">مشروع صوب زراعية</h5>
-          <p class="card-text small opacity-85">صوب متكاملة مع أنظمة تحكم مناخي وري.</p>
+          <h5 class="card-title" data-i18n="projects.card1Title"></h5>
+          <p class="card-text small opacity-85 mb-3" data-i18n="projects.card1Desc"></p>
           <a href="projects.html" class="btn btn-sm main-color bg-secondary text-dark" data-i18n="projects.viewAll">عرض الكل</a>
         </div>
       </div>
     </div>
-    <div class="col-md-6 col-lg-4">
+    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="60">
       <div class="card border-0 rounded-3 overflow-hidden shadow-sm h-100">
-        <img src="./assets/images/projects/project-2.jpg" class="card-img-top" alt="مشروع هيدروبونيك" style="height: 280px; object-fit: cover;" onerror="this.src='https://placehold.co/600x280/0e2e0e/fff?text=Project+2'" />
+        <img
+          src="./assets/images/projects/project-2.jpg"
+          class="card-img-top"
+          alt=""
+          style="height: 280px; object-fit: cover"
+          onerror="this.src='https://placehold.co/600x280/0e2e0e/fff?text=Hydroponics'"
+        />
         <div class="card-body bg-dark text-white">
-          <h5 class="card-title">مزرعة هيدروبونيك</h5>
-          <p class="card-text small opacity-85">نظام NFT لإنتاج الخضروات الورقية.</p>
+          <h5 class="card-title" data-i18n="projects.card2Title"></h5>
+          <p class="card-text small opacity-85 mb-3" data-i18n="projects.card2Desc"></p>
           <a href="projects.html" class="btn btn-sm main-color bg-secondary text-dark" data-i18n="projects.viewAll">عرض الكل</a>
         </div>
       </div>
     </div>
-    <div class="col-md-6 col-lg-4">
+    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="120">
       <div class="card border-0 rounded-3 overflow-hidden shadow-sm h-100">
-        <img src="./assets/images/projects/project-3.jpg" class="card-img-top" alt="مشروع استشارات" style="height: 280px; object-fit: cover;" onerror="this.src='https://placehold.co/600x280/1a2f1a/fff?text=Project+3'" />
+        <img
+          src="./assets/images/projects/project-3.jpg"
+          class="card-img-top"
+          alt=""
+          style="height: 280px; object-fit: cover"
+          onerror="this.src='https://placehold.co/600x280/1a2f1a/fff?text=Farms+%26+Marketing'"
+        />
         <div class="card-body bg-dark text-white">
-          <h5 class="card-title">وحدة إنتاج متكاملة</h5>
-          <p class="card-text small opacity-85">صوب + هيدروبونيك + غرف تحضين.</p>
+          <h5 class="card-title" data-i18n="projects.card3Title"></h5>
+          <p class="card-text small opacity-85 mb-3" data-i18n="projects.card3Desc"></p>
           <a href="projects.html" class="btn btn-sm main-color bg-secondary text-dark" data-i18n="projects.viewAll">عرض الكل</a>
         </div>
       </div>
     </div>
   </div>
 </div>
+<script>
+  AOS.init({
+    duration: 1000,
+    easing: 'ease-in-out',
+    delay: 100,
+    offset: 100,
+  });
+</script>

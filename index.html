@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="ar" >
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -19,7 +19,7 @@
 
     <!-- google font  -->
 
-    <title>Agrka</title>
+    <title>أجريكا — حلول زراعية ذكية</title>
   </head>
 
   <body>
@@ -44,14 +44,14 @@
   ##################################################
 -->
 
-    <section class="about-section py-5 animate-section" id="about"></section>
+    <section class="about-section py-5 px-md-5" id="about"></section>
     <!-- 
   ##################################################
   #                   Services                     #
   ##################################################
 -->
     <section
-      class="services-section py-5 animate-section"
+      class="services-section py-5 px-md-5 "
       id="services"
     ></section>
 
@@ -61,7 +61,7 @@
   ##################################################
 -->
     <section
-      class="projects-section py-5 animate-section"
+      class="projects-section py-5 px-md-5 "
       id="projects"
     ></section>
     <!-- 
@@ -69,14 +69,14 @@
   #                    Blogs                       #
   ##################################################
 -->
-    <section class="blogs-section py-5 animate-section" id="blogs"></section>
+    <section class="blogs-section py-5 px-md-5 " id="blogs"></section>
     <!-- 
   ##################################################
   #                   Contact Us                   #
   ##################################################
 -->
     <section
-      class="contact-section py-5 animate-section"
+      class="contact-section py-5 px-md-5 "
       id="contact"
     ></section>
     <!-- 
@@ -97,15 +97,18 @@
       data-wow-duration="1s"
     >
       <a
-        href="tel:01210609965"
+        href="tel:+201123734611"
         class="btn d-flex align-items-center justify-content-center"
+        aria-label="اتصال"
       >
         <i class="fas fa-phone"></i>
       </a>
       <a
-        href="http://wa.me/+201210609965"
+        href="https://wa.me/201123734611"
         target="_blank"
+        rel="noopener noreferrer"
         class="btn d-flex align-items-center justify-content-center"
+        aria-label="WhatsApp"
       >
         <i class="fab fa-whatsapp"></i>
       </a>
@@ -118,7 +121,10 @@
     </div>
     <!-- JS -->
     <script src="./assets/js/jquery-3.7.1.min.js"></script>
-
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+<script src="./assets/js/aos.js"></script>
     <script>
       $("#heroDesktop").load("home/hero-desktop.html");
       $("#heroMobile").load("home/hero-mobile.html");
@@ -132,16 +138,12 @@
       $("#loader").load("app/loader.html");
 AOS.init({
   duration: 1000,
-
   easing: 'ease-in-out',
   delay: 100,
   offset: 100,
 });
 
     </script>
-    <script src="./assets/js/bootstrap.bundle.min.js"></script>
-    <script src="./assets/js/swiper-bundle.min.js"></script>
-    <script src="./assets/js/main.js"></script>
-<script src="./assets/js/aos.js"></script>
+
   </body>
 </html>

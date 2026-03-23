@@ -1,9 +1,9 @@
 {
   "hero": {
+    "brand": "AGRiKA",
     "title": "Smart Agricultural Solutions for a Sustainable Future",
-   
-    "desc": "At Agrika we provide integrated solutions in designing, implementing and managing modern agricultural projects, from traditional farming to greenhouses, hydroponics, agricultural marketing and specialized training, aimed at increasing production and achieving the highest return on investment with the latest technologies.",
-    "tagline": "Turn your idea into a successful agricultural project with us",
+    "desc": "At Agrika we deliver integrated solutions for designing, implementing and managing modern agricultural projects—from traditional farming to greenhouses, hydroponics, agricultural marketing and specialized training—to increase production and maximize return on investment with the latest technologies.",
+    "tagline": "Turn your idea into a successful agricultural project with us ",
     "cta": "Request a free consultation"
   },
   "nav": {
@@ -16,10 +16,10 @@
     "contact": "Contact Us"
   },
   "header": {
-    "address": "Address - Egypt"
+    "address": "Egypt — address to be added"
   },
   "footer": {
-    "description": "We specialize in agricultural greenhouses, hydroponic systems, and modern farming solutions.",
+    "description": "Agrika is a leading Egyptian company for integrated agricultural solutions: projects, greenhouses, hydroponics, irrigation, crop and livestock production, training, and crop marketing.",
     "quickLinks": "Quick Links",
     "contact": "Contact Us",
     "email": "Email",
@@ -29,35 +29,64 @@
   },
   "about": {
     "title": "About Us",
-    "heading": "Leaders in Greenhouses & Hydroponics",
-    "text1": "We provide integrated solutions for building agricultural greenhouses and designing hydroponic systems for maximum productivity and sustainability.",
-    "text2": "We work with farmers and investors to deliver controlled growing environments and modern irrigation and nutrition technologies."
+    "heading": "Agrika — Integrated Agricultural Solutions",
+    "intro1": "Agrika is a leading Egyptian company in integrated agricultural solutions, bringing together agricultural engineers, consultants, veterinarians, and experts in management and agricultural marketing.",
+    "intro2": "We offer end-to-end services covering study and planning, implementation, operation, follow-up, marketing, and training—to ensure the success and sustainability of agricultural projects and the best economic return for our clients.",
+    "pipelineTitle": "Our approach",
+    "pipelineLine": "Study & planning – Implementation – Operation – Follow-up – Marketing – Training",
+    "intro3": "Our expertise combines science with hands-on practice to deliver measurable results in the field.",
+    "visionTitle": "Our vision",
+    "visionText": "To be among the best agricultural companies in Egypt, the Middle East and Africa in modern agriculture, smart farming, hydroponics, and professional agricultural marketing.",
+    "missionTitle": "Our mission",
+    "missionHtml": "<ul class=\"list-unstyled mb-0\"><li class=\"mb-2\">✔ Increase production</li><li class=\"mb-2\">✔ Reduce costs</li><li class=\"mb-2\">✔ Improve crop quality</li><li class=\"mb-2\">✔ Maximize profits</li><li class=\"mb-0\">✔ Preserve natural resources</li></ul>",
+    "whyTitle": "Why Agrika?",
+    "whyHtml": "<div class=\"col-md-6\"><ul class=\"list-unstyled small mb-0\"><li class=\"mb-2\">✔ Strong hands-on experience in agricultural projects</li><li class=\"mb-2\">✔ End-to-end solutions from idea to sale</li><li class=\"mb-2\">✔ Latest modern and hydroponic farming technologies</li><li class=\"mb-2\">✔ Specialized engineering, consulting and veterinary team</li></ul></div><div class=\"col-md-6\"><ul class=\"list-unstyled small mb-0\"><li class=\"mb-2\">✔ Professional training academy</li><li class=\"mb-2\">✔ Strong local and export marketing network</li><li class=\"mb-2\">✔ Competitive pricing and high quality</li><li class=\"mb-0\">✔ Ongoing support after implementation</li></ul></div>",
+    "founderTitle": "Founder & CEO",
+    "founderName": "Eng. Karim Ali",
+    "founderBio": "Agricultural engineer specialized in designing, implementing and managing modern agricultural projects, with practical experience in greenhouses, hydroponics, crop and livestock production, and agricultural marketing. He leads Agrika with a clear vision to turn agriculture into a profitable, sustainable investment."
   },
   "services": {
-    "title": "Our Services",
-    "heading": "Integrated Agricultural Solutions",
-    "greenhouses": "Agricultural Greenhouses",
-    "greenhousesDesc": "Design and build modern greenhouses tailored to climate and production needs.",
-    "hydroponics": "Hydroponic Systems",
-    "hydroponicsDesc": "Install soilless growing systems (NFT, DWC, etc.) with operational support.",
-    "consulting": "Agricultural Consulting",
-    "consultingDesc": "Feasibility studies and crop and system selection for your project.",
-    "maintenance": "Maintenance & Operation",
-    "maintenanceDesc": "Routine maintenance for greenhouses and systems to ensure continuous production."
+    "title": "Our services",
+    "heading": "Our core divisions",
+    "d1Title": "Agrika Projects Division",
+    "d1Desc": "Design and implementation of agricultural projects<br>Professional feasibility studies<br>Farm design and planning<br>Integrated projects (crops – livestock – poultry)<br>Farm management and operation",
+    "d2Title": "Agrika Greenhouses Division",
+    "d2Desc": "Design and build plastic and glass greenhouses<br>Cooling, ventilation and climate control<br>Greenhouse operation to boost production",
+    "d3Title": "Hydroponics by Agrika",
+    "d3Desc": "Soilless and hydroponic systems: NFT, DWC, drip hydroponics, ebb &amp; flow, aeroponics, vertical farming. Nutrient programs, client training on operation and management, and smart solutions for high-quality output with minimal water and space.",
+    "d4Title": "Agrika Irrigation Systems",
+    "d4Desc": "Drip irrigation<br>Design and installation of complete irrigation networks<br>Better water-use efficiency",
+    "d5Title": "Plant Production Division",
+    "d5Desc": "Programs for field crops, vegetables and fruit<br>Production management and quality improvement<br>Higher efficiency and returns",
+    "d6Title": "Animal &amp; Poultry Production",
+    "d6Desc": "Poultry, duck, sheep and cattle farms<br>Feeding and health management programs<br>Full veterinary supervision",
+    "d7Title": "Agrika Training Academy",
+    "d7Desc": "Professional courses on hydroponics, greenhouses, modern farm management, crop production, feasibility studies and agricultural marketing. Hands-on training with recognized certificates for investors and growers.",
+    "d8Title": "Agrika Crop Marketing Division",
+    "d8Desc": "Commission-based marketing and sales for growers: vegetables, fruit and field crops, linking producers with traders and exporters, negotiating the best prices, fast off-take, and export support to open new markets."
   },
   "projects": {
-    "title": "Our Projects",
-    "heading": "Featured Completed Projects",
-    "viewAll": "View All"
+    "title": "Our projects",
+    "heading": "Work in the field",
+    "intro": "A dedicated space for real photos and case studies (modern greenhouses, NFT and DWC hydroponics, crop and livestock farms, irrigation networks, and crop marketing) to build trust.",
+    "card1Title": "Modern greenhouse projects",
+    "card1Desc": "Plastic and glass structures with climate control and irrigation.",
+    "card2Title": "NFT & DWC hydroponic systems",
+    "card2Desc": "Design and operation of high-yield soilless systems.",
+    "card3Title": "Farms, irrigation & marketing",
+    "card3Desc": "Crop and livestock production, drip networks, and crop sales.",
+    "viewAll": "View all"
   },
   "blogs": {
     "title": "Blog",
-    "heading": "Latest Articles",
-    "readMore": "Read More"
+    "heading": "Latest articles",
+    "readMore": "Read more"
   },
   "contact": {
-    "title": "Contact Us",
-    "heading": "We're Here to Help",
+    "title": "Contact us",
+    "heading": "Agrika — Egypt",
+    "ctaLine": "Get a consultation now",
+    "emailPending": "Email to be added soon",
     "name": "Name",
     "email": "Email",
     "phone": "Phone",

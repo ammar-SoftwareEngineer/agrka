@@ -13,7 +13,7 @@ async function loadLanguage(lang) {
   // Re-apply for dynamically loaded content (hero, sections)
   setTimeout(function () {
     if (currentTranslations) applyTranslations(currentTranslations);
-  }, 1200);
+  }, 2200);
 }
 // ==============================
 // 2) Apply translation to HTML elements
@@ -54,7 +54,7 @@ btnLang.forEach((btn) => {
 // ==============================
 // 5) Load previously saved language when the site opens
 // ==============================
-const savedLang = localStorage.getItem("lang") || "en";
+const savedLang = localStorage.getItem("lang") || "ar";
 if (savedLang === "ar") {
   document.body.dir = "rtl";
   btnLang.forEach((btn) => (btn.innerHTML = "EN"));
