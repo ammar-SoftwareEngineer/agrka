@@ -1070,13 +1070,14 @@ body[dir="rtl"] {
 */
 .contact-section {
   position: relative;
-  background: linear-gradient(165deg, #0a0f0a 0%, #141c14 40%, #1a2618 100%);
+background: url("../images/contact/bg.webp") no-repeat center center;
 
-  & .contact-bg-overlay {
+  &::before {
     position: absolute;
     inset: 0;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.35) 0%, rgba(20, 30, 20, 0.5) 100%);
-    z-index: 1;
+    content: "";
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 0;
   }
 
   & .header-section {
@@ -1099,14 +1100,14 @@ body[dir="rtl"] {
   }
 
   & .contact-info {
-    background: rgba(255, 255, 255, 0.08);
-    backdrop-filter: blur(14px);
-    -webkit-backdrop-filter: blur(14px);
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
     border: 1px solid rgba(255, 255, 255, 0.14);
-    border-radius: var(--radius-md) !important;
+    border-radius: var(--radius-0) !important;
     z-index: 2;
     transition: transform 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease;
-
+color: var(--third-color) !important;
     &:hover {
       transform: translateY(-4px);
       border-color: rgba(124, 152, 78, 0.45);
@@ -1118,7 +1119,7 @@ body[dir="rtl"] {
       height: 60px;
       background: rgba(124, 152, 78, 0.2);
       border: 1px solid rgba(124, 152, 78, 0.35);
-      border-radius: 50%;
+      border-radius: var(--radius-0);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -1133,7 +1134,7 @@ body[dir="rtl"] {
 
     & a {
       transition: all 0.3s ease;
-
+color: var(--third-color) !important;
       &:hover {
         color: var(--second-color) !important;
       }
@@ -1152,20 +1153,20 @@ body[dir="rtl"] {
 .contact-form-wrapper {
   position: relative;
   z-index: 2;
-  background: rgba(255, 255, 255, 0.07);
+  background: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   border: 1px solid rgba(255, 255, 255, 0.12);
-  border-radius: var(--radius-md) !important;
+  border-radius: var(--radius-0) !important;
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
 
   & .form-control {
     border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: var(--radius-sm);
+    border-radius: var(--radius-0);
     padding: 0.75rem 1rem;
     transition: all 0.3s ease;
-    background: rgba(0, 0, 0, 0.15);
-    color: var(--white-color);
+    background: rgba(255, 255, 255, 0.7);
+    color: var(--third-color) !important;
 
     &:focus {
       border-color: var(--second-color);
@@ -1180,7 +1181,7 @@ body[dir="rtl"] {
   }
 
   & .form-label {
-    color: rgba(255, 255, 255, 0.85) !important;
+    color: var(--third-color) !important;
   }
 
   & .btn-send {
@@ -1256,176 +1257,6 @@ body[dir="rtl"] {
     z-index: 1;
   }
 }
-
-/*  
-##################################################
-#                    Footer                      #
-##################################################
-*/
-.footer {
-  background:
-    radial-gradient(circle at 12% 18%, rgba(124, 152, 78, 0.2) 0%, transparent 34%),
-    radial-gradient(circle at 86% 84%, rgba(124, 152, 78, 0.14) 0%, transparent 38%),
-    linear-gradient(165deg, #21301f 0%, #2f462b 55%, #1f2d1e 100%);
-  color: var(--white-color);
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-  border-top: 1px solid rgba(124, 152, 78, 0.25);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05);
-
-  &::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    pointer-events: none;
-    background-image: repeating-linear-gradient(130deg,
-        rgba(255, 255, 255, 0.03) 0,
-        rgba(255, 255, 255, 0.03) 1px,
-        transparent 1px,
-        transparent 16px);
-    opacity: 0.45;
-  }
-
-  & .container {
-    position: relative;
-    z-index: 1;
-  }
-
-  & img {
-    max-width: 150px;
-    height: auto;
-    transition: transform 0.4s ease;
-
-    &:hover {
-      transform: scale(1.05);
-    }
-  }
-
-  & .footer-logo {
-    filter: brightness(0) invert(1);
-
-  }
-
-  & p,
-  & a {
-    font-size: 1rem;
-    line-height: 1.7;
-    color: var(--white-color);
-  }
-
-  & h5 {
-    color: var(--white-color);
-    position: relative;
-    letter-spacing: 0.02em;
-
-    &::after {
-      content: "";
-      display: block;
-      width: 40px;
-      height: 3px;
-      background: var(--second-color);
-      margin-top: 6px;
-      border-radius: 10px;
-    }
-  }
-
-  & .footer-links a {
-    position: relative;
-    transition: all 0.35s ease-in-out;
-    display: inline-block;
-    color: var(--white-color) !important;
-
-    &::after {
-      content: "";
-      position: absolute;
-      left: 0;
-      bottom: -4px;
-      width: 0;
-      height: 2px;
-      background: var(--white-color);
-      transition: width 0.3s ease-in-out;
-    }
-
-    &:hover {
-      color: var(--second-color) !important;
-      transform: translateX(-5px);
-
-      &::after {
-        width: 100%;
-      }
-    }
-  }
-
-  & .contact-links a {
-    transition: color 0.3s ease, transform 0.3s ease;
-    color: var(--white-color) !important;
-
-    i {
-      color: var(--white-color) !important;
-    }
-
-    &:hover {
-      color: var(--second-color) !important;
-      transform: translateX(-4px);
-    }
-  }
-
-  & .footer-social {
-    display: flex;
-    gap: 15px;
-
-    & a {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 46px;
-      height: 46px;
-      border-radius: 50%;
-      background: rgba(255, 255, 255, 0.08);
-      border: 1px solid rgba(124, 152, 78, 0.35);
-      transition: all 0.35s ease;
-      font-size: 1.2rem;
-
-      &:hover {
-        transform: translateY(-6px) scale(1.04);
-        border-color: rgba(124, 152, 78, 0.75);
-        box-shadow: 0 10px 24px rgba(0, 0, 0, 0.28);
-        background: rgba(124, 152, 78, 0.2);
-      }
-
-      & img {
-        transition: transform 0.35s ease, filter 0.35s ease;
-        filter: brightness(1.1);
-      }
-
-      &:hover img {
-        transform: scale(1.08);
-        filter: brightness(1.2);
-      }
-    }
-  }
-
-  & .copyright {
-    font-size: 0.9rem;
-    color: var(--white-color) !important;
-    padding-top: 0.2rem;
-
-    & a {
-      color: var(--second-color);
-      transition: color 0.3s ease;
-
-      &:hover {
-        color: #d8ef9f;
-      }
-    }
-  }
-
-  & hr {
-    border-color: rgba(255, 255, 255, 0.16);
-  }
-}
-
 
 /* ========== تفاصيل الخدمة — تصميم موحّد ========== */
 .sd {
@@ -2032,5 +1863,174 @@ body[dir="rtl"] {
       padding-inline-start: 1.2rem;
       margin-bottom: 0.85rem;
     }
+  }
+}
+
+/*  
+##################################################
+#                    Footer                      #
+##################################################
+*/
+.footer {
+  background:
+    radial-gradient(circle at 12% 18%, rgba(124, 152, 78, 0.2) 0%, transparent 34%),
+    radial-gradient(circle at 86% 84%, rgba(124, 152, 78, 0.14) 0%, transparent 38%),
+    linear-gradient(165deg, #21301f 0%, #2f462b 55%, #1f2d1e 100%);
+  color: var(--white-color);
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  border-top: 1px solid rgba(124, 152, 78, 0.25);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05);
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background-image: repeating-linear-gradient(130deg,
+        rgba(255, 255, 255, 0.03) 0,
+        rgba(255, 255, 255, 0.03) 1px,
+        transparent 1px,
+        transparent 16px);
+    opacity: 0.45;
+  }
+
+  & .container {
+    position: relative;
+    z-index: 1;
+  }
+
+  & img {
+    max-width: 150px;
+    height: auto;
+    transition: transform 0.4s ease;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  & .footer-logo {
+    filter: brightness(0) invert(1);
+
+  }
+
+  & p,
+  & a {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--white-color);
+  }
+
+  & h5 {
+    color: var(--white-color);
+    position: relative;
+    letter-spacing: 0.02em;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 40px;
+      height: 3px;
+      background: var(--second-color);
+      margin-top: 6px;
+      border-radius: 10px;
+    }
+  }
+
+  & .footer-links a {
+    position: relative;
+    transition: all 0.35s ease-in-out;
+    display: inline-block;
+    color: var(--white-color) !important;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -4px;
+      width: 0;
+      height: 2px;
+      background: var(--white-color);
+      transition: width 0.3s ease-in-out;
+    }
+
+    &:hover {
+      color: var(--second-color) !important;
+      transform: translateX(-5px);
+
+      &::after {
+        width: 100%;
+      }
+    }
+  }
+
+  & .contact-links a {
+    transition: color 0.3s ease, transform 0.3s ease;
+    color: var(--white-color) !important;
+
+    i {
+      color: var(--white-color) !important;
+    }
+
+    &:hover {
+      color: var(--second-color) !important;
+      transform: translateX(-4px);
+    }
+  }
+
+  & .footer-social {
+    display: flex;
+    gap: 15px;
+
+    & a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(124, 152, 78, 0.35);
+      transition: all 0.35s ease;
+      font-size: 1.2rem;
+
+      &:hover {
+        transform: translateY(-6px) scale(1.04);
+        border-color: rgba(124, 152, 78, 0.75);
+        box-shadow: 0 10px 24px rgba(0, 0, 0, 0.28);
+        background: rgba(124, 152, 78, 0.2);
+      }
+
+      & img {
+        transition: transform 0.35s ease, filter 0.35s ease;
+        filter: brightness(1.1);
+      }
+
+      &:hover img {
+        transform: scale(1.08);
+        filter: brightness(1.2);
+      }
+    }
+  }
+
+  & .copyright {
+    font-size: 0.9rem;
+    color: var(--white-color) !important;
+    padding-top: 0.2rem;
+
+    & a {
+      color: var(--second-color);
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: #d8ef9f;
+      }
+    }
+  }
+
+  & hr {
+    border-color: rgba(255, 255, 255, 0.16);
   }
 }
