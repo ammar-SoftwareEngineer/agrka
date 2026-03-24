@@ -1,26 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="shortcut icon"
-      href="./assets/images/logo.png"
-      type="image/x-icon"
-    />
+    <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon" />
 
     <!-- files css -->
     <link rel="stylesheet" href="./assets/css/all.min.css" />
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
-
     <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/media.css" />
     <!-- google font  -->
 
-    <title>Karim Mounir</title>
+    <title>Article — Agrika</title>
   </head>
-
   <body>
     <!-- 
   ##################################################
@@ -35,19 +29,15 @@
 -->
     <header class="header" id="header"></header>
 
-    <div id="hero-pages" data-title="Blogs" data-breadcrumb="Blogs"></div>
+    <div id="hero-pages" data-title="Articles" data-breadcrumb="Articles"></div>
     <!-- 
   ##################################################
-  #                    Blogs                       #
+  #              Article detail                    #
   ##################################################
 -->
-
-    <!-- 
-  ##################################################
-  #                Blogs content                   #
-  ##################################################
--->
-
+    <section class="py-5 px-md-5">
+      <div class="container py-4" id="details-container"></div>
+    </section>
     <!-- 
   ##################################################
   #                  Footer                        #
@@ -68,37 +58,43 @@
       <a
         href="tel:+201123734611"
         class="d-flex align-items-center justify-content-center"
+        aria-label="Phone"
       >
         <i class="fas fa-phone"></i>
       </a>
       <a
         href="https://wa.me/201123734611"
         target="_blank"
+        rel="noopener noreferrer"
         class="d-flex align-items-center justify-content-center"
+        aria-label="WhatsApp"
       >
         <i class="fab fa-whatsapp"></i>
       </a>
       <!-- Back To Top start -->
     </div>
     <div class="back-to-top wow fadeInRight">
-      <a id="back-top" class>
-        <i class="fas fa-long-arrow-up"></i>
-      </a>
+      <a id="back-top" class><i class="fas fa-long-arrow-up"></i></a>
     </div>
 
     <!-- JS -->
     <script src="./assets/js/jquery-3.7.1.min.js"></script>
+    <script src="./assets/js/data.js"></script>
     <script>
-      $("#header").load("app/header.html");
-      $("#loader").load("app/loader.html");
-      $("#footer").load("app/footer.html");
-      $("#wating").load("app/wating-page.html");
-      $("#hero-pages").load("app/hero.html");
+      window.addEventListener("translationsready", function () {
+        renderDetails();
+      });
     </script>
-
+    <script src="./assets/js/translate.js"></script>
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/swiper-bundle.min.js"></script>
     <script src="./assets/js/aos.js"></script>
     <script src="./assets/js/main.js"></script>
+    <script>
+      $("#header").load("app/header.html");
+      $("#loader").load("app/loader.html");
+      $("#footer").load("app/footer.html");
+      $("#hero-pages").load("app/hero.html");
+    </script>
   </body>
 </html>

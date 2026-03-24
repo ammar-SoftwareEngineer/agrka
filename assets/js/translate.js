@@ -1,5 +1,6 @@
 let btnLang = document.querySelectorAll(".btn-lang");
 let currentTranslations = null;
+window.currentTranslations = null;
 
 // ==============================
 // 1) Load language from JSON file
@@ -8,11 +9,16 @@ async function loadLanguage(lang) {
   const response = await fetch(`./assets/locales/${lang}.json`);
   const translations = await response.json();
   currentTranslations = translations;
+  window.currentTranslations = translations;
   applyTranslations(translations);
+  window.dispatchEvent(new Event("translationsready"));
   localStorage.setItem("lang", lang);
   // Re-apply for dynamically loaded content (hero, sections)
   setTimeout(function () {
-    if (currentTranslations) applyTranslations(currentTranslations);
+    if (currentTranslations) {
+      applyTranslations(currentTranslations);
+      window.dispatchEvent(new Event("translationsready"));
+    }
   }, 2200);
 }
 // ==============================
@@ -24,7 +30,13 @@ function applyTranslations(dictionary) {
     const text = getValueByPath(dictionary, key);
     if (text) el.innerHTML = text;
   });
+  document.querySelectorAll("[data-i18n-placeholder]").forEach((el) => {
+    const key = el.getAttribute("data-i18n-placeholder");
+    const text = getValueByPath(dictionary, key);
+    if (text) el.setAttribute("placeholder", text);
+  });
 }
+window.applyTranslations = applyTranslations;
 
 // ==============================
 // 3) Function to access nested values key.key2.key3

@@ -36,12 +36,16 @@
     <header class="header" id="header"></header>
 
     <div id="hero-pages" data-title="Projects" data-breadcrumb="Projects"></div>
-
     <!-- 
   ##################################################
   #                   Projects                     #
   ##################################################
 -->
+    <section class="py-5 px-md-5">
+      <div class="container-fluid px-md-5 px-3 py-5">
+        <div id="projects-cards-row"></div>
+      </div>
+    </section>
     <!-- 
   ##################################################
   #                  Footer                        #
@@ -50,9 +54,9 @@
     <footer id="footer" class="shadow"></footer>
 
     <!-- 
-##################################################
-#                  SOCIAL ICONS                  #
-##################################################
+  ##################################################
+  #                  SOCIAL ICONS                  #
+  ##################################################
 -->
 
     <div
@@ -80,19 +84,25 @@
       </a>
     </div>
 
-   <!-- js -->
-   <script src="./assets/js/jquery-3.7.1.min.js"></script>
-   <script>
-     $("#header").load("app/header.html");
-     $("#loader").load("app/loader.html");
-     $("#footer").load("app/footer.html");
-     $("#wating").load("app/wating-page.html");
-     $("#hero-pages").load("app/hero.html");
-   </script>
-
-   <script src="./assets/js/bootstrap.bundle.min.js"></script>
-   <script src="./assets/js/swiper-bundle.min.js"></script>
-   <script src="./assets/js/aos.js"></script>
-   <script src="./assets/js/main.js"></script>
+    <!-- JS: Swiper قبل الترجمة حتى يكون متاحاً عند renderProjectCards -->
+    <script src="./assets/js/jquery-3.7.1.min.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+    <script src="./assets/js/data.js"></script>
+    <script>
+      window.addEventListener("translationsready", function () {
+        renderProjectCards("projects-cards-row");
+      });
+    </script>
+    <script src="./assets/js/translate.js"></script>
+    <script>
+      $("#header").load("app/header.html");
+      $("#loader").load("app/loader.html");
+      $("#footer").load("app/footer.html");
+      $("#wating").load("app/wating-page.html");
+      $("#hero-pages").load("app/hero.html");
+    </script>
+    <script src="./assets/js/aos.js"></script>
+    <script src="./assets/js/main.js"></script>
   </body>
 </html>
