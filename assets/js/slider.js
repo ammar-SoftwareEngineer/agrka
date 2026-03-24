@@ -22,7 +22,7 @@ if (document.querySelector(".mySwiper-mobile")) {
   window.projectSwiper = new Swiper(".project-swiper", {
     loop: true,
     speed: 800,
-    spaceBetween: 24,
+    spaceBetween: 0,
     autoplay: {
       delay: 3500,
       disableOnInteraction: false,
@@ -43,7 +43,7 @@ if (document.querySelector(".mySwiper-mobile")) {
         slidesPerView: 2,
       },
       1200: {
-        slidesPerView: 3,
+        slidesPerView: 4,
       },
     },
   });

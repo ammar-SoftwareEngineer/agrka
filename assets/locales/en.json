@@ -99,7 +99,14 @@
     "card2Desc": "Design and operation of high-yield soilless systems.",
     "card3Title": "Farms, irrigation & marketing",
     "card3Desc": "Crop and livestock production, drip networks, and crop sales.",
-    "viewAll": "View all"
+    "viewAll": "View all",
+    "project1Title": "Vertical farming project at Simi Hydroponic",
+    "project2Title": "O ROOTS project in Hurghada",
+    "project3Title": "Agro Ford project in the Wadi al-Jadid governorate",
+    "project4Title": "Z project in Mansoura - Giza",
+    "project5Title": "Makadi Pharm project in Ahmed Arabi - Al-Obour",
+    "project6Title": "Practical training at the sites",
+    "project7Title": "Ero Bonik vertical farming"
   },
   "services": [
     {
