@@ -30,7 +30,26 @@
 -->
     <header class="header" id="header"></header>
 
-    <div id="hero-pages" data-title="Projects" data-breadcrumb="Projects"></div>
+    <section class="hero-pages position-relative d-flex align-items-end">
+
+      <div class="container py-5 text-center text-white hero-content z-3 position-relative sd-hero__inner">
+        <h1 class="sd-hero__title fw-bold mb-4 " data-i18n="hero.breadcrumbProjectDetails"></h1>
+  
+        <nav aria-label="breadcrumb">
+          <ol
+            class="breadcrumb d-flex flex-wrap justify-content-center gap-1 gap-sm-2 align-items-center text-white mb-0 "
+            data-wow-delay="0.7s">
+            <li class="breadcrumb-item">
+              <a href="index.html" class="text-white text-decoration-none" data-i18n="hero.home"></a>
+            </li>
+            <li class="text-white fs-5" aria-hidden="true">/</li>
+            <li class="breadcrumb-item fw-semibold active text-white fs-5" aria-current="page"
+              data-i18n="hero.breadcrumbProjectDetails">
+            </li>
+          </ol>
+        </nav>
+      </div>
+    </section>
     <!-- 
   ##################################################
   #              Project detail                    #

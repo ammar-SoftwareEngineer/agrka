@@ -7,7 +7,9 @@
     "cta": "Request a free consultation",
     "home": "Home",
     "breadcrumbServices": "Services",
-    "breadcrumbServiceDetails": "Service Details"
+    "breadcrumbServiceDetails": "Service Details",
+    "breadcrumbProjects": "Our Projects",
+    "breadcrumbBlogDetails": "Blog Details"
   },
   "nav": {
     "home": "Home",
@@ -88,6 +90,9 @@
       "callUsTitle": "More information",
       "callUsHint": "Call us directly"
     }
+  },
+  "blogsPage": {
+    "more": "View more"
   },
   "projectsPage": {
     "title": "Our projects",

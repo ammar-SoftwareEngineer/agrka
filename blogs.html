@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="shortcut icon"
-      href="./assets/images/logo.png"
+      href="./assets/images/logo/logo.png"
       type="image/x-icon"
     />
 
@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="./assets/css/media.css" />
     <!-- google font  -->
 
-    <title>Karim Mounir</title>
+    <title>Blogs</title>
   </head>
 
   <body>
@@ -35,7 +35,37 @@
 -->
     <header class="header" id="header"></header>
 
-    <div id="hero-pages" data-title="Blogs" data-breadcrumb="Blogs"></div>
+    <section
+    class="hero-pages position-relative d-flex align-items-end"
+  
+  >
+  
+    <div class="container py-5 text-center text-white hero-content z-3 position-relative sd-hero__inner">
+      <h1
+        class="sd-hero__title fw-bold mb-4 "
+       data-i18n="blogs.title"
+      ></h1>
+  
+      <nav aria-label="breadcrumb">
+        <ol
+          class="breadcrumb d-flex flex-wrap justify-content-center gap-1 gap-sm-2 align-items-center text-white mb-0 "
+          data-wow-delay="0.7s"
+        >
+          <li class="breadcrumb-item">
+            <a href="index.html" class="text-white text-decoration-none" data-i18n="hero.home"
+              ></a
+            >
+          </li>
+          <li class="text-white fs-5" aria-hidden="true">/</li>
+          <li
+            class="breadcrumb-item fw-semibold active text-white fs-5"
+            aria-current="page"
+          
+          data-i18n="blogs.title"></li>
+        </ol>
+      </nav>
+    </div>
+  </section>
     <!-- 
   ##################################################
   #                    Blogs                       #
@@ -62,7 +92,7 @@
 -->
 
     <div
-      class="social-icon position-fixed bottom-0 d-flex flex-column gap-1 z-3 wow fadeInRight"
+      class="social-icon position-fixed bottom-0 d-flex flex-column gap-1 z-3"
       data-wow-duration="1s"
     >
       <a
@@ -80,7 +110,7 @@
       </a>
       <!-- Back To Top start -->
     </div>
-    <div class="back-to-top wow fadeInRight">
+    <div class="back-to-top">
       <a id="back-top" class>
         <i class="fas fa-long-arrow-up"></i>
       </a>
@@ -88,17 +118,18 @@
 
     <!-- JS -->
     <script src="./assets/js/jquery-3.7.1.min.js"></script>
+  
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+    <script src="./assets/js/aos.js"></script>
+    <script src="./assets/js/main.js"></script>
     <script>
       $("#header").load("app/header.html");
       $("#loader").load("app/loader.html");
       $("#footer").load("app/footer.html");
       $("#wating").load("app/wating-page.html");
-      $("#hero-pages").load("app/hero.html");
+
     </script>
 
-    <script src="./assets/js/bootstrap.bundle.min.js"></script>
-    <script src="./assets/js/swiper-bundle.min.js"></script>
-    <script src="./assets/js/aos.js"></script>
-    <script src="./assets/js/main.js"></script>
   </body>
 </html>

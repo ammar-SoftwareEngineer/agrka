@@ -217,6 +217,33 @@ function setupServiceDetailHero(item) {
 }
 
 // ============================================================
+// Hero image + title for project/article/blog detail pages
+// ============================================================
+function setupGenericDetailHero(item, fallbackTitlePath) {
+  const hero = document.querySelector("section.hero-pages");
+  if (!hero) return;
+
+  const titleEl = hero.querySelector(".sd-hero__title");
+  const dict = window.currentTranslations || {};
+  const fallbackTitle = String(fallbackTitlePath || "")
+    .split(".")
+    .reduce((acc, key) => (acc && acc[key] != null ? acc[key] : ""), dict) || "";
+
+  if (item && item.image) {
+    hero.classList.add("hero-pages--has-bg");
+    const src = String(item.image).replace(/\\/g, "/").replace(/"/g, "%22");
+    hero.style.setProperty("--hero-bg-image", `url("${src}")`);
+  } else {
+    hero.classList.remove("hero-pages--has-bg");
+    hero.style.removeProperty("--hero-bg-image");
+  }
+
+  if (titleEl) {
+    titleEl.textContent = (item && item.title) || fallbackTitle;
+  }
+}
+
+// ============================================================
 // Render detail page — works for service / project / article
 // ============================================================
 function renderDetails() {
@@ -240,14 +267,31 @@ function renderDetails() {
 
   // — Project / Article details (simple layout — HTML template in page)
   const pages = {
-    "project-details.html": { key: "projects", emptyId: "project-detail-empty", articleId: "project-detail-article" },
-    "article-details.html": { key: "articles",  emptyId: "article-detail-empty", articleId: "article-detail-article" },
+    "project-details.html": {
+      key: "projects",
+      emptyId: "project-detail-empty",
+      articleId: "project-detail-article",
+      heroFallback: "hero.breadcrumbProjectDetails",
+    },
+    "article-details.html": {
+      key: "articles",
+      emptyId: "article-detail-empty",
+      articleId: "article-detail-article",
+      heroFallback: "hero.breadcrumbArticles",
+    },
+    "blog-details.html": {
+      key: "articles",
+      emptyId: "article-detail-empty",
+      articleId: "article-detail-article",
+      heroFallback: "blogDetails.title",
+    },
   };
 
   const cfg = pages[file];
   if (!cfg) return;
 
   const item = getItems(cfg.key).find((r) => String(r.id) === String(id));
+  setupGenericDetailHero(item || null, cfg.heroFallback);
   toggleArticle(!!item, cfg.emptyId, cfg.articleId);
   if (item) fillFields(item);
   applyI18n();

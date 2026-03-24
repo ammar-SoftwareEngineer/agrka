@@ -7,7 +7,10 @@
     "cta": "اطلب استشارة مجانية",
     "home": "الرئيسية",
     "breadcrumbServices": "الخدمات",
-    "breadcrumbServiceDetails": "تفاصيل الخدمة"
+    "breadcrumbServiceDetails": "تفاصيل الخدمة",
+    "breadcrumbProjects": "مشاريعنا",
+    "breadcrumbBlogDetails": "تفاصيل المدونة",
+    "breadcrumbProjectDetails": "تفاصيل المشروع"
   },
   "nav": {
     "home": "الرئيسية",
@@ -31,7 +34,7 @@
     "rights": "جميع الحقوق محفوظة"
   },
   "about": {
-    "title": "نبذة عنا",
+    "title": "من نحن",
     "heading": "أجريكا — حلول زراعية متكاملة",
     "teaser": "شركة مصرية متخصصة في حلول زراعية متكاملة: تخطيط، تنفيذ، صوب، زراعة مائية، تسويق وتدريب—لرفع الإنتاج وتحسين العائد.",
     "more": "المزيد عن أجريكا",
@@ -110,7 +113,11 @@
     "project4Title": "مشروع شركة Z بالمنصورية - جيزة",
     "project5Title": "شركة مكادي فارم - أحمد عرابي - العبور",
     "project6Title": "تدريبات عملية في المواقع",
-    "project7Title": "ايرو بونيك زراعة رأسية"
+    "project7Title": "ايرو بونيك زراعة رأسية",
+    "more": "المزيد"
+  },
+  "blogsPage": {
+    "more": "المزيد"
   },
   "services": [
     {

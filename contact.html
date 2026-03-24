@@ -1,92 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="shortcut icon"
-      href="./assets/images/logo.png"
-      type="image/x-icon"
-    />
 
-    <!-- files css -->
-    <link rel="stylesheet" href="./assets/css/all.min.css" />
-    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="./assets/css/aos.css" />
-    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <link rel="stylesheet" href="./assets/css/media.css" />
-    <!-- google font  -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon" />
 
-    <title>Agrka </title>
-  </head>
+  <!-- files css -->
+  <link rel="stylesheet" href="./assets/css/all.min.css" />
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./assets/css/aos.css" />
+  <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="./assets/css/media.css" />
+  <!-- google font  -->
 
-  <body>
-    <!-- 
+  <title>Agrka </title>
+</head>
+
+<body>
+  <!-- 
   ##################################################
   #                   Loading                      #
   ##################################################
 -->
-    <div class="loading" id="loader"></div>
-    <!-- 
+  <div class="loading" id="loader"></div>
+  <!-- 
   ##################################################
   #                   home                         #
   ##################################################
 -->
-    <header class="header" id="header"></header>
-    <div id="hero-pages" data-title="Contact US" data-breadcrumb="Contact US"></div>
+  <header class="header" id="header"></header>
+  <section class="hero-pages position-relative d-flex align-items-end">
 
-    <!-- 
+    <div class="container py-5 text-center text-white hero-content z-3 position-relative sd-hero__inner">
+      <h1 class="sd-hero__title fw-bold mb-4 " data-i18n="contact.title"></h1>
+
+      <nav aria-label="breadcrumb">
+        <ol
+          class="breadcrumb d-flex flex-wrap justify-content-center gap-1 gap-sm-2 align-items-center text-white mb-0 "
+          data-wow-delay="0.7s">
+          <li class="breadcrumb-item">
+            <a href="index.html" class="text-white text-decoration-none" data-i18n="hero.home"></a>
+          </li>
+          <li class="text-white fs-5" aria-hidden="true">/</li>
+          <li class="breadcrumb-item fw-semibold active text-white fs-5" aria-current="page" data-i18n="contact.title">
+          </li>
+        </ol>
+      </nav>
+    </div>
+  </section>
+  <!-- 
+  ##################################################
+  #                  Contact Us                     #
+  ##################################################
+-->
+  <section class="contact-section py-5 px-md-5 ">
+    <div class="container-fluid px-md-5 px-3">
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-4">
+          <div class="contact-info rounded-3 p-4 text-center text-white h-100">
+            <div class="icon-circle mx-auto mb-2">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <h6 class="mb-2" data-i18n="footer.email">البريد الإلكتروني</h6>
+            <span class="d-block small" data-i18n="contact.emailPending">يُضاف البريد الإلكتروني لاحقًا</span>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4">
+          <div class="contact-info rounded-3 p-4 text-center text-white h-100">
+            <div class="icon-circle mx-auto mb-2">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+            <h6 class="mb-2" data-i18n="footer.phone">الهاتف</h6>
+            <a href="tel:+201123734611" class="d-block  " dir="ltr">+20 112 373 4611</a>
+            <a href="tel:+201068743552" class="d-block " dir="ltr">+20 106 874 3552</a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4">
+          <div class="contact-info rounded-3 p-4 text-center text-white h-100">
+            <div class="icon-circle mx-auto mb-2">
+              <i class="fa-brands fa-whatsapp"></i>
+            </div>
+            <h6 class="mb-2">WhatsApp</h6>
+            <a href="https://wa.me/201123734611" target="_blank" rel="noopener noreferrer" class="d-block text-white"
+              dir="ltr">+20 112 373 4611</a>
+            <a href="https://wa.me/201068743552" target="_blank" rel="noopener noreferrer" class="d-block text-white"
+              dir="ltr">+20 106 874 3552</a>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-md-8 ">
+          <form id="contact-form" class="contact-form-wrapper rounded-3 p-4 p-md-5">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label class="form-label text-white small" data-i18n="contact.name">الاسم</label>
+                <input type="text" class="form-control" placeholder="" required />
+              </div>
+              <div class="col-md-6">
+                <label class="form-label text-white small" data-i18n="contact.email">البريد الإلكتروني</label>
+                <input type="email" class="form-control" placeholder="" />
+              </div>
+              <div class="col-12">
+                <label class="form-label text-white small" data-i18n="contact.phone">رقم الهاتف</label>
+                <input type="tel" class="form-control" placeholder="" />
+              </div>
+              <div class="col-12">
+                <label class="form-label text-white small" data-i18n="contact.message">الرسالة</label>
+                <textarea class="form-control" rows="4" placeholder="" required></textarea>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-send px-4 py-2 rounded">
+                  <i class="fas fa-paper-plane me-2"></i>
+                  <span data-i18n="contact.send">إرسال</span>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-4">
+          <div class="map-wrapper h-100">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3453.85973832134!2d31.35159207510253!3d30.060701724671593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1458409f43bc67a9%3A0x9c499f646ad8a60b!2sAgrka!5e0!3m2!1sen!2seg!4v1742832843291!5m2!1sen!2seg"
+              width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    </div>
+  </section>
+  <!-- 
   ##################################################
   #                  Footer                        #
   ##################################################
 -->
-    <footer id="footer" class="shadow"></footer>
+  <footer id="footer" class="shadow"></footer>
 
-    <!-- 
+  <!-- 
 ##################################################
 #                  SOCIAL ICONS                  #
 ##################################################
 -->
 
-    <div
-      class="social-icon position-fixed bottom-0 d-flex flex-column gap-1 z-3 wow fadeInRight"
-      data-wow-duration="1s"
-    >
-      <a
-        href="tel:+201123734611"
-        class="btn d-flex align-items-center justify-content-center"
-      >
-        <i class="fas fa-phone"></i>
-      </a>
-      <a
-        href="https://wa.me/201123734611"
-        target="_blank"
-        class="btn d-flex align-items-center justify-content-center"
-      >
-        <i class="fab fa-whatsapp"></i>
-      </a>
-      <!-- Back To Top start -->
-    </div>
-    <div class="back-to-top wow fadeInRight">
-      <a id="back-top" class>
-        <i class="fas fa-long-arrow-up"></i>
-      </a>
-    </div>
+  <div class="social-icon position-fixed bottom-0 d-flex flex-column gap-1 z-3" data-wow-duration="1s">
+    <a href="tel:+201123734611" class="btn d-flex align-items-center justify-content-center">
+      <i class="fas fa-phone"></i>
+    </a>
+    <a href="https://wa.me/201123734611" target="_blank" class="btn d-flex align-items-center justify-content-center">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+    <!-- Back To Top start -->
+  </div>
+  <div class="back-to-top">
+    <a id="back-top" class>
+      <i class="fas fa-long-arrow-up"></i>
+    </a>
+  </div>
 
- <!-- js -->
- <script src="./assets/js/jquery-3.7.1.min.js"></script>
- <script>
-   $("#header").load("app/header.html");
-   $("#loader").load("app/loader.html");
-   $("#footer").load("app/footer.html");
-   $("#wating").load("app/wating-page.html");
-   $("#hero-pages").load("app/hero.html");
- </script>
+  <!-- js -->
+  <script src="./assets/js/jquery-3.7.1.min.js"></script>
 
- <script src="./assets/js/bootstrap.bundle.min.js"></script>
- <script src="./assets/js/swiper-bundle.min.js"></script>
- <script src="./assets/js/aos.js"></script>
- <script src="./assets/js/main.js"></script>
-  </body>
+
+  <script src="./assets/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/js/swiper-bundle.min.js"></script>
+  <script src="./assets/js/aos.js"></script>
+  <script src="./assets/js/main.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      easing: 'ease-in-out',
+      delay: 100,
+      offset: 100,
+    });
+    $("#header").load("app/header.html");
+    $("#loader").load("app/loader.html");
+    $("#footer").load("app/footer.html");
+    $("#wating").load("app/wating-page.html");
+  </script>
+</body>
+
 </html>

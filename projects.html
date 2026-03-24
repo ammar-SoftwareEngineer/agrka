@@ -1,108 +1,202 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="shortcut icon"
-      href="./assets/images/logo.png"
-      type="image/x-icon"
-    />
+<html lang="ar">
 
-    <!-- files css -->
-    <link rel="stylesheet" href="./assets/css/all.min.css" />
-    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="./assets/css/aos.css" />
-    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <link rel="stylesheet" href="./assets/css/media.css" />
-    <!-- google font  -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="./assets/images/logo/logo.png" type="image/x-icon" />
 
-    <title></title>
-  </head>
+  <!-- files css -->
+  <link rel="stylesheet" href="./assets/css/all.min.css" />
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./assets/css/aos.css" />
+  <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="./assets/css/media.css" />
+  <!-- google font  -->
 
-  <body>
-    <!-- 
+  <title>projects</title>
+</head>
+
+<body>
+  <!-- 
   ##################################################
   #                   Loading                      #
   ##################################################
 -->
-    <div class="loading" id="loader"></div>
-    <!-- 
+  <div class="loading" id="loader"></div>
+  <!-- 
   ##################################################
   #                   home                         #
   ##################################################
 -->
-    <header class="header" id="header"></header>
+  <header class="header" id="header"></header>
 
-    <div id="hero-pages" data-title="Projects" data-breadcrumb="Projects"></div>
-    <!-- 
+  <section class="hero-pages position-relative d-flex align-items-end">
+
+    <div class="container py-5 text-center text-white hero-content z-3 position-relative sd-hero__inner">
+      <h1 class="sd-hero__title fw-bold mb-4 " data-i18n="hero.breadcrumbProjects"></h1>
+
+      <nav aria-label="breadcrumb">
+        <ol
+          class="breadcrumb d-flex flex-wrap justify-content-center gap-1 gap-sm-2 align-items-center text-white mb-0 "
+          data-wow-delay="0.7s">
+          <li class="breadcrumb-item">
+            <a href="index.html" class="text-white text-decoration-none" data-i18n="hero.home"></a>
+          </li>
+          <li class="text-white fs-5" aria-hidden="true">/</li>
+          <li class="breadcrumb-item fw-semibold active text-white fs-5" aria-current="page"
+            data-i18n="hero.breadcrumbProjects">
+          </li>
+        </ol>
+      </nav>
+    </div>
+  </section>
+  <!-- 
   ##################################################
   #                   Projects                     #
   ##################################################
 -->
-    <section class="py-5 px-md-5">
-      <div class="container-fluid px-md-5 px-3 py-5">
-        <div id="projects-cards-row"></div>
+  <section class="projects-section py-5 px-md-5">
+    <div class="container-fluid px-md-5 px-3 py-5">
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4" data-aos="fade-up">
+          <div class="card border-0 rounded-0 overflow-hidden shadow-sm h-100">
+            <div class="project-img-wrapper overflow-hidden">
+              <img src="./assets/images/projects/project-1/1.webp" class="card-img-top rounded-0" alt="" />
+            </div>
+            <div class="card-body d-flex justify-content-between align-items-center">
+              <h5 class="card-title" data-i18n="projectsPage.project1Title">موقع زراعة رأسية سيمي هيدروبونيك</h5>
+              <a href="project-details.html?id=1" class="btn btn-link"><i class="fa-solid fa-chevron-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="60">
+          <div class="card border-0 rounded-0 overflow-hidden shadow-sm h-100">
+            <div class="project-img-wrapper overflow-hidden">
+              <img src="./assets/images/projects/project-2/1.jpg" class="card-img-top rounded-0" alt="" />
+            </div>
+            <div class="card-body d-flex justify-content-between align-items-center">
+              <h5 class="card-title" data-i18n="projectsPage.project2Title">مشروع O ROOTS بالغردقة</h5>
+              <a href="project-details.html?id=2" class="btn btn-link"><i class="fa-solid fa-chevron-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="120">
+          <div class="card border-0 rounded-0 overflow-hidden shadow-sm h-100">
+            <div class="project-img-wrapper overflow-hidden">
+              <img src="./assets/images/projects/project-3/1.jpg" class="card-img-top rounded-0" alt="" />
+            </div>
+            <div class="card-body d-flex justify-content-between align-items-center">
+              <h5 class="card-title" data-i18n="projectsPage.project3Title">مشروع شركة أجرو فرود بمحافظة الوادي الجديد</h5>
+              <a href="project-details.html?id=3" class="btn btn-link"><i class="fa-solid fa-chevron-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="180">
+          <div class="card border-0 rounded-0 overflow-hidden shadow-sm h-100">
+            <div class="project-img-wrapper overflow-hidden">
+              <img src="./assets/images/projects/project-4/1.webp" class="card-img-top rounded-0" alt="" />
+            </div>
+            <div class="card-body d-flex justify-content-between align-items-center">
+              <h5 class="card-title" data-i18n="projectsPage.project4Title">مشروع شركة Z بالمنصورية - جيزة</h5>
+              <a href="project-details.html?id=4" class="btn btn-link"><i class="fa-solid fa-chevron-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="card border-0 rounded-0 overflow-hidden shadow-sm h-100">
+            <div class="project-img-wrapper overflow-hidden">
+              <img src="./assets/images/projects/project-5/1.jpg" class="card-img-top rounded-0" alt="" />
+            </div>
+            <div class="card-body d-flex justify-content-between align-items-center">
+              <h5 class="card-title" data-i18n="projectsPage.project5Title">شركة مكادي فارم - أحمد عرابي - العبور</h5>
+              <a href="project-details.html?id=5" class="btn btn-link"><i class="fa-solid fa-chevron-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="360">
+          <div class="card border-0 rounded-0 overflow-hidden shadow-sm h-100">
+            <div class="project-img-wrapper overflow-hidden">
+              <img src="./assets/images/projects/project-6/1.jpg" class="card-img-top rounded-0" alt="" />
+            </div>
+            <div class="card-body d-flex justify-content-between align-items-center">
+              <h5 class="card-title" data-i18n="projectsPage.project6Title">تدريبات عملية في المواقع</h5>
+              <a href="project-details.html?id=6" class="btn btn-link"><i class="fa-solid fa-chevron-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="420">
+          <div class="card border-0 rounded-0 overflow-hidden shadow-sm h-100">
+            <div class="project-img-wrapper overflow-hidden">
+              <img src="./assets/images/projects/project-7/1.jpg" class="card-img-top rounded-0" alt="" />
+            </div>
+            <div class="card-body d-flex justify-content-between  align-items-center">
+              <h5 class="card-title" data-i18n="projectsPage.project7Title">ايرو بونيك زراعة رأسية</h5>
+              <a href="project-details.html?id=7" class="btn btn-link"><i class="fa-solid fa-chevron-right"></i></a>
+            </div>
+          </div>
+        </div>
       </div>
-    </section>
-    <!-- 
+    </div>
+  </section>
+  <!-- 
   ##################################################
   #                  Footer                        #
   ##################################################
 -->
-    <footer id="footer" class="shadow"></footer>
+  <footer id="footer" class="shadow"></footer>
 
-    <!-- 
+  <!-- 
   ##################################################
   #                  SOCIAL ICONS                  #
   ##################################################
 -->
 
-    <div
-      class="social-icon position-fixed bottom-0 d-flex flex-column gap-1 z-3 wow fadeInRight"
-      data-wow-duration="1s"
-    >
-      <a
-        href="tel:+201123734611"
-        class="btn d-flex align-items-center justify-content-center"
-      >
-        <i class="fas fa-phone"></i>
-      </a>
-      <a
-        href="https://wa.me/201123734611"
-        target="_blank"
-        class="btn d-flex align-items-center justify-content-center"
-      >
-        <i class="fab fa-whatsapp"></i>
-      </a>
-      <!-- Back To Top start -->
-    </div>
-    <div class="back-to-top wow fadeInRight">
-      <a id="back-top" class>
-        <i class="fas fa-long-arrow-up"></i>
-      </a>
-    </div>
+  <div class="social-icon position-fixed bottom-0 d-flex flex-column gap-1 z-3 " >
+    <a href="tel:+201123734611" class="btn d-flex align-items-center justify-content-center">
+      <i class="fas fa-phone"></i>
+    </a>
+    <a href="https://wa.me/201123734611" target="_blank" class="btn d-flex align-items-center justify-content-center">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+    <!-- Back To Top start -->
+  </div>
+  <div class="back-to-top ">
+    <a id="back-top" class>
+      <i class="fas fa-long-arrow-up"></i>
+    </a>
+  </div>
 
-    <!-- JS: Swiper قبل الترجمة حتى يكون متاحاً عند renderProjectCards -->
-    <script src="./assets/js/jquery-3.7.1.min.js"></script>
-    <script src="./assets/js/bootstrap.bundle.min.js"></script>
-    <script src="./assets/js/swiper-bundle.min.js"></script>
-    <script src="./assets/js/data.js"></script>
-    <script>
-      window.addEventListener("translationsready", function () {
-        renderProjectCards("projects-cards-row");
-      });
-    </script>
-    <script src="./assets/js/translate.js"></script>
-    <script>
-      $("#header").load("app/header.html");
-      $("#loader").load("app/loader.html");
-      $("#footer").load("app/footer.html");
-      $("#wating").load("app/wating-page.html");
-      $("#hero-pages").load("app/hero.html");
-    </script>
-    <script src="./assets/js/aos.js"></script>
-    <script src="./assets/js/main.js"></script>
-  </body>
+  <!-- JS: Swiper قبل الترجمة حتى يكون متاحاً عند renderProjectCards -->
+  <script src="./assets/js/jquery-3.7.1.min.js"></script>
+  <script src="./assets/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/js/swiper-bundle.min.js"></script>
+  <script src="./assets/js/data.js"></script>
+
+
+
+  <script src="./assets/js/aos.js"></script>
+  <script src="./assets/js/main.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      easing: 'ease-in-out',
+      delay: 100,
+      offset: 100,
+    });
+    $("#header").load("app/header.html");
+    $("#loader").load("app/loader.html");
+    $("#footer").load("app/footer.html");
+
+
+  </script>
+</body>
+
 </html>
