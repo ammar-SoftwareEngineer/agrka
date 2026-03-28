@@ -12,13 +12,13 @@
     <!-- files css -->
     <link rel="stylesheet" href="./assets/css/all.min.css" />
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
-
+    <link rel="stylesheet" href="./assets/css/aos.css" />
     <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/media.css" />
     <!-- google font  -->
 
-    <title>Blogs</title>
+    <title>Agrka</title>
   </head>
 
   <body>
@@ -35,48 +35,34 @@
 -->
     <header class="header" id="header"></header>
 
-    <section
-    class="hero-pages position-relative d-flex align-items-end"
-  
-  >
-  
-    <div class="container py-5 text-center text-white hero-content z-3 position-relative sd-hero__inner">
-      <h1
-        class="sd-hero__title fw-bold mb-4 "
-       data-i18n="blogs.title"
-      ></h1>
-  
-      <nav aria-label="breadcrumb">
-        <ol
-          class="breadcrumb d-flex flex-wrap justify-content-center gap-1 gap-sm-2 align-items-center text-white mb-0 "
-          data-wow-delay="0.7s"
-        >
-          <li class="breadcrumb-item">
-            <a href="index.html" class="text-white text-decoration-none" data-i18n="hero.home"
-              ></a
-            >
-          </li>
-          <li class="text-white fs-5" aria-hidden="true">/</li>
-          <li
-            class="breadcrumb-item fw-semibold active text-white fs-5"
-            aria-current="page"
-          
-          data-i18n="blogs.title"></li>
-        </ol>
-      </nav>
-    </div>
-  </section>
-    <!-- 
-  ##################################################
-  #                    Blogs                       #
-  ##################################################
--->
+    <section class="hero-pages position-relative d-flex align-items-end">
+      <div class="container py-5 text-center text-white hero-content z-3 position-relative sd-hero__inner">
+        <h1 class="sd-hero__title fw-bold mb-4" data-i18n="blogs.title"></h1>
+        <nav aria-label="breadcrumb">
+          <ol
+            class="breadcrumb d-flex flex-wrap justify-content-center gap-1 gap-sm-2 align-items-center text-white mb-0"
+            data-wow-delay="0.7s"
+          >
+            <li class="breadcrumb-item">
+              <a href="index.html" class="text-white text-decoration-none" data-i18n="hero.home"></a>
+            </li>
+            <li class="text-white fs-5" aria-hidden="true">/</li>
+            <li
+              class="breadcrumb-item fw-semibold active text-white fs-5"
+              aria-current="page"
+              data-i18n="blogs.title"
+            ></li>
+          </ol>
+        </nav>
+      </div>
+    </section>
 
-    <!-- 
-  ##################################################
-  #                Blogs content                   #
-  ##################################################
--->
+    <section class="blogs-page blogs-section py-5 px-md-5" aria-labelledby="blogs-page-heading">
+      <div class="container-fluid px-md-5 px-3 py-4 py-lg-5">
+     
+        <div id="blogs-page-grid" class="blogs-page__grid"></div>
+      </div>
+    </section>
 
     <!-- 
   ##################################################
@@ -118,17 +104,27 @@
 
     <!-- JS -->
     <script src="./assets/js/jquery-3.7.1.min.js"></script>
-  
+    <script src="./assets/js/data.js"></script>
+    <script>
+      window.addEventListener("translationsready", function () {
+        renderArticleCards("blogs-page-grid");
+      });
+    </script>
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/swiper-bundle.min.js"></script>
     <script src="./assets/js/aos.js"></script>
     <script src="./assets/js/main.js"></script>
     <script>
+      AOS.init({
+        duration: 800,
+        once: true,
+        offset: 100,
+        easing: "ease-in-out",
+      });
       $("#header").load("app/header.html");
       $("#loader").load("app/loader.html");
       $("#footer").load("app/footer.html");
       $("#wating").load("app/wating-page.html");
-
     </script>
 
   </body>

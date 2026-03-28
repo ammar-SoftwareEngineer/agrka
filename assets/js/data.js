@@ -13,11 +13,18 @@ const safeIcon = (icon) => {
 };
 
 // ============================================================
-// Get a section array from the current translations
+// Active UI language (must match translate.js localStorage key)
+// ============================================================
+const getContentLocale = () =>
+  (typeof localStorage !== "undefined" && localStorage.getItem("lang")) || "ar";
+
+// ============================================================
+// Content arrays from site-data.json (not locale UI files)
 // ============================================================
 const getItems = (key) => {
-  const t = window.currentTranslations;
-  return t && Array.isArray(t[key]) ? t[key] : [];
+  const sd = window.siteData;
+  const branch = sd && sd.locales && sd.locales[getContentLocale()];
+  return branch && Array.isArray(branch[key]) ? branch[key] : [];
 };
 
 // ============================================================
@@ -69,16 +76,108 @@ const fillOptionalBlock = (wrapId, bodyId, content) => {
 };
 
 // ============================================================
-// Render service cards: image + icon bar + title
+// Project detail: Swiper slider + Fancybox (same image group)
 // ============================================================
-function renderServiceCards(containerId) {
-  const root = document.getElementById(containerId);
-  const items = getItems("services");
-  if (!root || !items.length) return;
+const fillProjectGallery = (item) => {
+  const wrapper = document.getElementById("project-detail-swiper-wrapper");
+  const root = document.querySelector(".project-detail-swiper");
+  if (!wrapper || !root || !item) return;
 
-  root.innerHTML =
-    '<div class="row g-3 g-md-4">' +
-    items.map((item) => `
+  const urls =
+    item.gallery && Array.isArray(item.gallery) && item.gallery.length
+      ? item.gallery
+      : item.image
+        ? [item.image]
+        : [];
+
+  if (!urls.length) return;
+
+  if (_projectDetailSwiper) {
+    _projectDetailSwiper.destroy(true, true);
+    _projectDetailSwiper = null;
+  }
+
+  const group = `project-${item.id}`;
+  const cap = esc(item.title || "");
+  const alt = esc(item.title || "");
+
+  wrapper.innerHTML = urls
+    .map(
+      (url) => `
+    <div class="swiper-slide">
+      <a href="${esc(url)}" class="project-detail-slide-link d-block w-100 h-100 overflow-hidden" data-fancybox="${group}" data-caption="${cap}">
+        <img src="${esc(url)}" alt="${alt}" class="project-detail-slide-img w-100 d-block" loading="lazy" />
+      </a>
+    </div>`
+    )
+    .join("");
+
+  if (typeof Swiper !== "undefined") {
+    _projectDetailSwiper = new Swiper(root, {
+      slidesPerView: 1,
+      spaceBetween: 0,
+      speed: 600,
+      grabCursor: true,
+      loop: urls.length > 2,
+      watchOverflow: true,
+      pagination: {
+        el: root.querySelector(".swiper-pagination"),
+        clickable: true,
+      },
+      navigation: {
+        nextEl: root.querySelector(".swiper-button-next"),
+        prevEl: root.querySelector(".swiper-button-prev"),
+      },
+    });
+  }
+
+  if (typeof window.Fancybox !== "undefined") {
+    window.Fancybox.bind("#project-detail-article a[data-fancybox]", {
+      Hash: false,
+    });
+  }
+};
+
+// ============================================================
+// Render service cards — variant "division" (home / services page) or "card" (grid)
+// ============================================================
+function renderServiceCards(containerId, opts) {
+  const options = opts || {};
+  const root = document.getElementById(containerId);
+  if (!root) return;
+
+  let items = getItems("services");
+  if (typeof options.limit === "number") items = items.slice(0, options.limit);
+  if (!items.length) return;
+
+  const variant = options.variant || "card";
+  const delayStep = typeof options.delayStep === "number" ? options.delayStep : 80;
+
+  if (variant === "division") {
+    root.innerHTML = items
+      .map(
+        (item, idx) => `
+      <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-duration="900" data-aos-anchor-placement="top-bottom" data-aos-delay="${idx * delayStep}">
+        <div class="card service-division-card border-0 text-white h-100">
+          <a href="service-details.html?id=${encodeURIComponent(item.id)}" class="text-decoration-none text-reset d-block h-100">
+            <img src="${esc(item.image)}" class="card-img-top" alt="" loading="lazy" />
+            <div class="card-body p-4 d-flex flex-column">
+              <div class="service-division-icon mb-3" aria-hidden="true">
+                <i class="${safeIcon(item.icon)} fa-xl"></i>
+              </div>
+              <h5 class="card-title mb-3 text-white">${esc(item.title)}</h5>
+            </div>
+          </a>
+        </div>
+      </div>`
+      )
+      .join("");
+  } else {
+    root.innerHTML =
+      '<div class="row g-3 g-md-4">' +
+      items
+        .map(
+          (item) => `
       <div class="col-6 col-md-4 col-lg-3">
         <a href="service-details.html?id=${encodeURIComponent(item.id)}"
            class="service-card d-block text-decoration-none text-reset h-100">
@@ -92,16 +191,22 @@ function renderServiceCards(containerId) {
             <div class="service-card__title">${esc(item.title)}</div>
           </div>
         </a>
-      </div>`).join("") +
-    "</div>";
+      </div>`
+        )
+        .join("") +
+      "</div>";
+  }
 
   applyI18n();
+  if (typeof window.AOS !== "undefined") window.AOS.refresh();
 }
 
 // ============================================================
 // Render project cards inside a Swiper slider
 // ============================================================
 let _swiper = null;
+let _projectDetailSwiper = null;
+let _indexHomeProjectSwiper = null;
 
 function renderProjectCards(containerId) {
   const root = document.getElementById(containerId);
@@ -152,10 +257,12 @@ function renderArticleCards(containerId) {
   if (!root || !items.length) return;
 
   root.innerHTML =
-    '<div class="row g-4">' +
-    items.map((item) => `
+    '<div class="row g-4 g-lg-4 blogs-page__row " data-aos="fade-up">' +
+    items
+      .map(
+        (item, i) => `
       <div class="col-md-6 col-lg-4">
-        <a href="article-details.html?id=${encodeURIComponent(item.id)}"
+        <a href="blog-details.html?id=${encodeURIComponent(item.id)}"
            class="article-card card border-0 rounded-0 overflow-hidden h-100 text-decoration-none text-reset">
           <div class="article-card__media">
             <img src="${esc(item.image)}" alt="" loading="lazy" />
@@ -163,13 +270,164 @@ function renderArticleCards(containerId) {
           <div class="card-body d-flex flex-column">
             <h5 class="card-title">${esc(item.title)}</h5>
             <p class="card-text small text-secondary flex-grow-1">${esc(item.description)}</p>
-            <span class="small fw-semibold mt-1" data-i18n="blogs.readMore"></span>
+            <span class="blog-read-more mt-1 align-self-start"><span data-i18n="blogs.readMore"></span><i class="fa-solid fa-arrow-right-long blog-read-more__icon" aria-hidden="true"></i></span>
           </div>
         </a>
-      </div>`).join("") +
+      </div>`
+      )
+      .join("") +
     "</div>";
 
   applyI18n();
+
+}
+
+// ============================================================
+// Home: first N services (division cards)
+// ============================================================
+function renderIndexServiceCards() {
+  renderServiceCards("index-services-cards", { variant: "division", limit: 4, delayStep: 80 });
+}
+
+// ============================================================
+// Home: projects Swiper (same layout as former static block)
+// ============================================================
+function renderIndexProjectsSwiper() {
+  const mount = document.getElementById("index-projects-mount");
+  if (!mount) return;
+
+  const items = getItems("projects");
+  if (!items.length) return;
+
+  if (_indexHomeProjectSwiper) {
+    _indexHomeProjectSwiper.destroy(true, true);
+    _indexHomeProjectSwiper = null;
+  }
+
+  const aosDelays = [0, 60, 120, 180, 300, 360, 420];
+  const slides = items
+    .map(
+      (item, i) => `
+    <div class="swiper-slide" data-aos="fade-up" data-aos-delay="${aosDelays[i] != null ? aosDelays[i] : i * 60}">
+      <div class="card border-0 rounded-0 overflow-hidden shadow-sm h-100">
+        <div class="project-img-wrapper overflow-hidden">
+          <img src="${esc(item.image)}" class="card-img-top rounded-0" alt="" loading="lazy" />
+        </div>
+        <div class="card-body d-flex justify-content-between align-items-center">
+          <h5 class="card-title">${esc(item.title)}</h5>
+          <a href="project-details.html?id=${encodeURIComponent(item.id)}" class="btn btn-link" aria-label=""><i class="fa-solid fa-chevron-right"></i></a>
+        </div>
+      </div>
+    </div>`
+    )
+    .join("");
+
+  mount.innerHTML = `
+    <div class="swiper project-swiper position-relative">
+      <div class="swiper-wrapper">${slides}</div>
+      <div class="swiper-pagination mt-4"></div>
+      <div class="swiper-button-prev"><i class="fa-solid fa-chevron-left"></i></div>
+      <div class="swiper-button-next"><i class="fa-solid fa-chevron-right"></i></div>
+    </div>`;
+
+  const el = mount.querySelector(".project-swiper");
+  if (el && typeof Swiper !== "undefined") {
+    _indexHomeProjectSwiper = new Swiper(el, {
+      loop: items.length > 2,
+      speed: 800,
+      spaceBetween: 0,
+      autoplay: {
+        delay: 3500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: el.querySelector(".swiper-pagination"),
+        clickable: true,
+      },
+      navigation: {
+        nextEl: el.querySelector(".swiper-button-next"),
+        prevEl: el.querySelector(".swiper-button-prev"),
+      },
+      breakpoints: {
+        0: { slidesPerView: 1 },
+        768: { slidesPerView: 2 },
+        1200: { slidesPerView: 4 },
+      },
+    });
+  }
+
+  applyI18n();
+  if (typeof window.AOS !== "undefined") window.AOS.refresh();
+}
+
+// ============================================================
+// Projects listing page — grid
+// ============================================================
+function renderProjectsPageGrid(containerId) {
+  const root = document.getElementById(containerId);
+  const items = getItems("projects");
+  if (!root || !items.length) return;
+
+  const aosDelays = [0, 60, 120, 180, 300, 360, 420];
+  root.innerHTML = items
+    .map(
+      (item, i) => `
+    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="${aosDelays[i] != null ? aosDelays[i] : i * 60}">
+      <div class="card border-0 rounded-0 overflow-hidden shadow-sm h-100">
+        <div class="project-img-wrapper overflow-hidden">
+          <img src="${esc(item.image)}" class="card-img-top rounded-0" alt="" loading="lazy" />
+        </div>
+        <div class="card-body d-flex justify-content-between align-items-center">
+          <h5 class="card-title">${esc(item.title)}</h5>
+          <a href="project-details.html?id=${encodeURIComponent(item.id)}" class="btn btn-link"><i class="fa-solid fa-chevron-right"></i></a>
+        </div>
+      </div>
+    </div>`
+    )
+    .join("");
+
+  applyI18n();
+  if (typeof window.AOS !== "undefined") window.AOS.refresh();
+}
+
+// ============================================================
+// Project detail — sidebar list
+// ============================================================
+function renderProjectSidebar(activeId) {
+  const ul = document.getElementById("project-sidebar-list");
+  if (!ul) return;
+
+  ul.innerHTML = getItems("projects")
+    .map(
+      (p) => `
+    <li>
+      <a href="project-details.html?id=${encodeURIComponent(p.id)}"
+         class="sd-nav__link d-flex align-items-center gap-2 text-decoration-none ${String(p.id) === String(activeId) ? "is-active" : ""}">
+        <span class="sd-nav__label text-truncate">${esc(p.title)}</span>
+      </a>
+    </li>`
+    )
+    .join("");
+}
+
+// ============================================================
+// Blog / article detail — sidebar list
+// ============================================================
+function renderArticleSidebar(activeId) {
+  const ul = document.getElementById("article-sidebar-list");
+  if (!ul) return;
+
+  ul.innerHTML = getItems("articles")
+    .map(
+      (a) => `
+    <li>
+      <a href="blog-details.html?id=${encodeURIComponent(a.id)}"
+         class="sd-nav__link d-flex align-items-center gap-2 text-decoration-none ${String(a.id) === String(activeId) ? "is-active" : ""}">
+        <span class="sd-nav__label text-truncate">${esc(a.title)}</span>
+      </a>
+    </li>`
+    )
+    .join("");
 }
 
 // ============================================================
@@ -241,6 +499,11 @@ function setupGenericDetailHero(item, fallbackTitlePath) {
   if (titleEl) {
     titleEl.textContent = (item && item.title) || fallbackTitle;
   }
+
+  const crumb = hero.querySelector(".breadcrumb-item.active");
+  if (crumb) {
+    crumb.textContent = (item && item.title) || fallbackTitle;
+  }
 }
 
 // ============================================================
@@ -293,6 +556,11 @@ function renderDetails() {
   const item = getItems(cfg.key).find((r) => String(r.id) === String(id));
   setupGenericDetailHero(item || null, cfg.heroFallback);
   toggleArticle(!!item, cfg.emptyId, cfg.articleId);
-  if (item) fillFields(item);
+  if (file === "project-details.html") renderProjectSidebar(id);
+  if (file === "blog-details.html") renderArticleSidebar(id);
+  if (item) {
+    fillFields(item);
+    if (file === "project-details.html") fillProjectGallery(item);
+  }
   applyI18n();
 }

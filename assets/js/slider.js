@@ -18,33 +18,3 @@ if (document.querySelector(".mySwiper-mobile")) {
     effect: "slide",
   });
 }
-
-  window.projectSwiper = new Swiper(".project-swiper", {
-    loop: true,
-    speed: 800,
-    spaceBetween: 0,
-    autoplay: {
-      delay: 3500,
-      disableOnInteraction: false,
-    },
-    pagination: {
-      el: ".project-swiper .swiper-pagination",
-      clickable: true,
-    },
-    navigation: {
-      nextEl: ".project-swiper .swiper-button-next",
-      prevEl: ".project-swiper .swiper-button-prev",
-    },
-    breakpoints: {
-      0: {
-        slidesPerView: 1,
-      },
-      768: {
-        slidesPerView: 2,
-      },
-      1200: {
-        slidesPerView: 4,
-      },
-    },
-  });
-

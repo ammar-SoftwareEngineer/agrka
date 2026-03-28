@@ -1,11 +1,28 @@
 let btnLang = document.querySelectorAll(".btn-lang");
 let currentTranslations = null;
 window.currentTranslations = null;
+window.siteData = window.siteData || null;
 
 // ==============================
-// 1) Load language from JSON file
+// Content data (services / projects / articles) — one file, all locales
+// ==============================
+async function loadSiteDataOnce() {
+  if (window.siteData) return window.siteData;
+  try {
+    const res = await fetch("./assets/data/site-data.json");
+    window.siteData = await res.json();
+  } catch (e) {
+    console.error("site-data load failed", e);
+    window.siteData = { locales: { ar: {}, en: {} } };
+  }
+  return window.siteData;
+}
+
+// ==============================
+// 1) Load UI strings + ensure content data is available
 // ==============================
 async function loadLanguage(lang) {
+  await loadSiteDataOnce();
   const response = await fetch(`./assets/locales/${lang}.json`);
   const translations = await response.json();
   currentTranslations = translations;

@@ -3,73 +3,142 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="./assets/images/logo/logo.png" type="image/x-icon" />
 
-    <!-- files css -->
     <link rel="stylesheet" href="./assets/css/all.min.css" />
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="./assets/css/aos.css" />
     <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./assets/css/fancybox.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/media.css" />
-    <!-- google font  -->
 
-    <title>Project — Agrika</title>
+    <title>Agrka</title>
   </head>
   <body>
-    <!-- 
-  ##################################################
-  #                   Loading                      #
-  ##################################################
--->
     <div class="loading" id="loader"></div>
-    <!-- 
-  ##################################################
-  #                   home                         #
-  ##################################################
--->
     <header class="header" id="header"></header>
 
     <section class="hero-pages position-relative d-flex align-items-end">
-
       <div class="container py-5 text-center text-white hero-content z-3 position-relative sd-hero__inner">
-        <h1 class="sd-hero__title fw-bold mb-4 " data-i18n="hero.breadcrumbProjectDetails"></h1>
-  
+        <h1 class="sd-hero__title fw-bold mb-4"></h1>
+
         <nav aria-label="breadcrumb">
           <ol
-            class="breadcrumb d-flex flex-wrap justify-content-center gap-1 gap-sm-2 align-items-center text-white mb-0 "
-            data-wow-delay="0.7s">
+            class="breadcrumb d-flex flex-wrap justify-content-center gap-1 gap-sm-2 align-items-center text-white mb-0"
+          >
             <li class="breadcrumb-item">
               <a href="index.html" class="text-white text-decoration-none" data-i18n="hero.home"></a>
             </li>
             <li class="text-white fs-5" aria-hidden="true">/</li>
-            <li class="breadcrumb-item fw-semibold active text-white fs-5" aria-current="page"
-              data-i18n="hero.breadcrumbProjectDetails">
+            <li class="breadcrumb-item">
+              <a href="projects.html" class="text-white text-decoration-none" data-i18n="projectsPage.title"></a>
             </li>
+            <li class="text-white fs-5" aria-hidden="true">/</li>
+            <li
+              class="breadcrumb-item fw-semibold active text-white fs-5"
+              aria-current="page"
+            ></li>
           </ol>
         </nav>
       </div>
     </section>
-    <!-- 
-  ##################################################
-  #              Project detail                    #
-  ##################################################
--->
-    <section class="py-5 px-md-5">
-      <div class="container py-4" id="details-container"></div>
-    </section>
-    <!-- 
-  ##################################################
-  #                  Footer                        #
-  ##################################################
--->
-    <footer id="footer" class="shadow"></footer>
 
-    <!-- 
-  ##################################################
-  #                  SOCIAL ICONS                  #
-  ##################################################
--->
+    <section class="sd py-5 px-md-5">
+      <div class="container-fluid px-md-5 px-3 py-4">
+        <div id="project-detail-empty" class="text-center text-muted py-5">
+          <p class="mb-0" data-i18n="projectsPage.notFound"></p>
+          <a href="projects.html" class="btn hero-cta-btn mt-3" data-i18n="projectsPage.title">مشروعاتنا</a>
+        </div>
+
+        <div id="project-detail-article" class="d-none">
+          <div class="row g-0 align-items-stretch">
+            <aside class="col-lg-3 order-2 order-lg-1">
+              <div class="sd-sidebar sticky-lg-top h-100 d-flex flex-column gap-2">
+                <p
+                  class="sd-sidebar__eyebrow fw-bold text-uppercase mb-0 pb-2"
+                  data-i18n="projectsPage.sidebarTitle"
+                ></p>
+                <nav class="sd-sidebar__nav" aria-label="Projects">
+                  <ul
+                    class="list-unstyled sd-nav sd-nav--dark mb-0 d-flex flex-column gap-1"
+                    id="project-sidebar-list"
+                  ></ul>
+                </nav>
+                <div class="sd-quote pt-3 border-top border-white border-opacity-10 flex-shrink-0">
+                  <p class="sd-quote__title fw-bold mb-3" data-i18n="servicesPage.detail.quoteTitle"></p>
+                  <form class="sd-quote__form" action="contact.html" method="get" novalidate>
+                    <label class="visually-hidden" for="sd-quote-name" data-i18n="servicesPage.detail.quoteName"></label>
+                    <input
+                      id="sd-quote-name"
+                      type="text"
+                      name="name"
+                      class="form-control sd-quote__input mb-2 rounded-0"
+                      autocomplete="name"
+                      data-i18n-placeholder="servicesPage.detail.quoteName"
+                    />
+                    <label class="visually-hidden" for="sd-quote-email" data-i18n="servicesPage.detail.quoteEmail"></label>
+                    <input
+                      id="sd-quote-email"
+                      type="email"
+                      name="email"
+                      class="form-control sd-quote__input mb-2 rounded-0"
+                      autocomplete="email"
+                      data-i18n-placeholder="servicesPage.detail.quoteEmail"
+                    />
+                    <label class="visually-hidden" for="sd-quote-phone" data-i18n="servicesPage.detail.quotePhone"></label>
+                    <input
+                      id="sd-quote-phone"
+                      type="tel"
+                      name="phone"
+                      class="form-control sd-quote__input mb-2 rounded-0 rtl-input"
+                      autocomplete="tel"
+                      data-i18n-placeholder="servicesPage.detail.quotePhone"
+                    />
+                    <button type="submit" class="btn-send w-100 fw-bold mt-2 rounded-0" data-i18n="servicesPage.detail.quoteSubmit"></button>
+                  </form>
+                </div>
+  
+                <div class="sd-call text-center p-3 mt-auto flex-shrink-0 rounded-0">
+                  <div class="sd-call__icon d-flex align-items-center justify-content-center mx-auto mb-2 rounded-0" aria-hidden="true">
+                    <i class="fas fa-phone"></i>
+                  </div>
+                  <p class="sd-call__title fw-bold text-uppercase small mb-1" data-i18n="servicesPage.detail.callUsTitle"></p>
+                  <p class="sd-call__hint small mb-2" data-i18n="servicesPage.detail.callUsHint"></p>
+                  <a href="tel:+201123734611" class="sd-call__phone fw-bold text-decoration-none" dir="ltr">+20 112 373 4611</a>
+                </div>
+              </div>
+            </aside>
+            <div class="col-lg-9 order-1 order-lg-2">
+              <div class="sd-main">
+                <div class="project-detail-slider-wrap overflow-hidden shadow-sm mb-0">
+                  <div class="swiper project-detail-swiper position-relative">
+                    <div class="swiper-wrapper" id="project-detail-swiper-wrapper"></div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev" aria-hidden="true">
+                      <i class="fa-solid fa-chevron-left"></i>
+                    </div>
+                    <div class="swiper-button-next" aria-hidden="true">
+                      <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                  </div>
+                </div>
+
+                <article class="sd-article p-md-5 py-4">
+                  <header class="sd-article__header">
+                    <h2 id="detail-title" class="sd-article__title fw-bold"></h2>
+                    <div id="detail-description" class="sd-article__lead"></div>
+                  </header>
+                  <div id="detail-body" class="sd-article__body"></div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer" class="shadow-lg"></footer>
 
     <div
       class="social-icon position-fixed bottom-0 d-flex flex-column gap-1 z-3 wow fadeInRight"
@@ -78,7 +147,7 @@
       <a
         href="tel:+201123734611"
         class="btn d-flex align-items-center justify-content-center"
-        aria-label="Phone"
+        aria-label="اتصال"
       >
         <i class="fas fa-phone"></i>
       </a>
@@ -91,21 +160,20 @@
       >
         <i class="fab fa-whatsapp"></i>
       </a>
-      <!-- Back To Top start -->
     </div>
     <div class="back-to-top wow fadeInRight">
       <a id="back-top" class><i class="fas fa-long-arrow-up"></i></a>
     </div>
 
-    <!-- JS -->
     <script src="./assets/js/jquery-3.7.1.min.js"></script>
+    <script src="./assets/js/fancybox.umd.js"></script>
     <script src="./assets/js/data.js"></script>
     <script>
       window.addEventListener("translationsready", function () {
         renderDetails();
       });
     </script>
-    <script src="./assets/js/translate.js"></script>
+
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/swiper-bundle.min.js"></script>
     <script src="./assets/js/aos.js"></script>
@@ -114,7 +182,6 @@
       $("#header").load("app/header.html");
       $("#loader").load("app/loader.html");
       $("#footer").load("app/footer.html");
-      $("#hero-pages").load("app/hero.html");
     </script>
   </body>
 </html>

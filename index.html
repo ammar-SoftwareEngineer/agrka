@@ -19,7 +19,7 @@
 
     <!-- google font  -->
 
-    <title>أجريكا — حلول زراعية ذكية</title>
+    <title>Agrka</title>
   </head>
 
   <body>
@@ -36,15 +36,99 @@
 -->
     <header class="header" id="header"></header>
 
-    <div class="hero d-md-block d-none " id="heroDesktop"></div>
-    <div class="hero-mobile d-md-none d-block" id="heroMobile"></div>
+    <div class="hero d-md-block d-none" id="heroDesktop">
+      <div class="hero-slider-wrapper position-relative">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="slide-image"><img src="./assets/images/slider/slider1.webp" alt="صوب زراعية"
+                  /></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide-image"><img src="./assets/images/slider/slider2.jpg" alt="هيدروبونيك"
+                   /></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide-image"><img src="./assets/images/slider/slider3.jpg" alt="هيدروبونيك"
+                  /></div>
+            </div>
+          </div>
+        </div>
+        <div class="hero-content-overlay">
+          <div class="container text-center text-white px-3">
+            <p class="hero-brand mb-3" data-i18n="hero.brand">أجريكا</p>
+            <h1 class="display-5 fw-bold mb-4" data-i18n="hero.title">حلول زراعية ذكية لمستقبل مستدام</h1>
+
+            <p class="fs-5 mb-4 fw-semibold" data-i18n="hero.tagline">حوّل فكرتك إلى مشروع زراعي ناجح معنا</p>
+            <a href="./contact.html" class="btn btn-lg px-4 py-3 hero-cta-btn" data-i18n="hero.cta">اطلب استشارة مجانية</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-mobile d-md-none d-block" id="heroMobile">
+      <div class="position-relative hero-mobile-wrap">
+        <div class="swiper mySwiper-mobile">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="slide-image"><img src="./assets/images/slider/slider1.webp" alt="صوب زراعية"
+                  /></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide-image"><img src="./assets/images/slider/slider2.jpg" alt="هيدروبونيك"
+                   /></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide-image"><img src="./assets/images/slider/slider3.jpg" alt="هيدروبونيك"
+                  /></div>
+            </div>
+          </div>
+        </div>
+        <div class="hero-content-overlay hero-content-overlay--mobile">
+          <div class="container text-center text-white px-3">
+            <p class="hero-brand mb-2" data-i18n="hero.brand">أجريكا</p>
+            <h1 class="hero-title-mobile fw-bold mb-2" data-i18n="hero.title">حلول زراعية ذكية لمستقبل مستدام</h1>
+
+            <p class="small fw-semibold mb-3" data-i18n="hero.tagline">حوّل فكرتك إلى مشروع زراعي ناجح معنا</p>
+            <a href="./contact.html" class="btn hero-cta-btn btn-sm" data-i18n="hero.cta">اطلب استشارة مجانية</a>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- 
   ##################################################
   #                   About us                     #
   ##################################################
 -->
 
-    <section class="about-section py-5 px-md-5" id="about"></section>
+    <section class="about-section py-5 px-md-5" id="about">
+      <div class="container-fluid px-md-5 px-3 py-5">
+        <div class="row align-items-center g-4 mb-5">
+          <div class="col-lg-6 order-lg-2" data-aos="fade-left" data-aos-duration="900">
+            <div class="about-image about-showcase-img">
+              <img
+                src="./assets/images/about/about2.jpg"
+                alt="أجريكا — حلول زراعية"
+                class="rounded-0 w-100"
+              />
+            </div>
+          </div>
+          <div class="col-lg-6 order-lg-1" data-aos="fade-right" data-aos-duration="900">
+            <div class="header-section mb-4" data-aos="fade-up" data-aos-delay="50">
+              <h2 class="mb-2" data-i18n="about.title">من نحن</h2>
+              <h3 class="h4 text-main" data-i18n="about.heading">أجريكا</h3>
+            </div>
+            <p class="mb-3" data-i18n="about.intro1" data-aos="fade-up" data-aos-delay="100"></p>
+            <p class="mb-3" data-i18n="about.intro2" data-aos="fade-up" data-aos-delay="150"></p>
+            <p class="mb-0 fw-semibold text-main" data-i18n="about.pipelineTitle" data-aos="fade-up" data-aos-delay="200"></p>
+            <p class="mb-3" data-i18n="about.pipelineLine" data-aos="fade-up" data-aos-delay="250"></p>
+            <p class="mb-0" data-i18n="about.intro3" data-aos="fade-up" data-aos-delay="300"></p>
+            <div class=" mt-5" data-aos="fade-up" data-aos-duration="900">
+              <a href="./about.html" class="btn hero-cta-btn px-4 py-3" data-i18n="about.more">المزيد</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- 
   ##################################################
   #                   Services                     #
@@ -54,7 +138,23 @@
       class="services-section py-5 px-md-5 "
       id="services"
       style="background: url('./assets/images/services/bg.jpg') no-repeat center center; background-size: cover; background-attachment: fixed;"
-    ></section>
+    >
+      <div class="container-fluid px-md-5 px-3 py-5">
+        <div class="header-section text-center mb-5">
+          <h2 class="mb-3" data-i18n="servicesPage.title" data-aos="fade-up" data-aos-duration="800">خدماتنا</h2>
+          <h3 data-i18n="servicesPage.heading" data-aos="fade-up" data-aos-delay="120" data-aos-duration="800">قطاعاتنا الرئيسية
+          </h3>
+        </div>
+        <div class="row g-4" id="index-services-cards"></div>
+        <div class="row mt-5" data-aos="fade-up" data-aos-duration="900">
+          <div class="col-12">
+            <div class="text-center">
+              <a href="./services.html" class="btn hero-cta-btn px-4 py-3" data-i18n="servicesPage.more">المزيد</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- 
   ##################################################
@@ -65,13 +165,84 @@
       class="projects-section py-5"
       id="projects"
     >
-  </section>
+      <div class="container-fluid  py-5">
+        <div class="header-section text-center mb-5">
+          <h2 class="mb-3" data-i18n="hero.breadcrumbProjects">مشروعاتنا</h2>
+          <p class=" text-muted small" data-i18n="projectsPage.intro"></p>
+        </div>
+
+        <div id="index-projects-mount"></div>
+        <div class="row mt-5" data-aos="fade-up">
+          <div class="col-12">
+            <div class="text-center">
+              <a href="./projects.html" class="btn hero-cta-btn px-4 py-3" data-i18n="projectsPage.more">المزيد</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- 
   ##################################################
   #                    Blogs                       #
   ##################################################
 -->
-    <section class="blogs-section py-5 px-md-5 " id="blogs"></section>
+    <section class="blogs-section py-5 px-md-5 " >
+      <div class="container-fluid px-md-5 px-3 py-5">
+        <div class="header-section text-center mb-5">
+          <h2 class="mb-3" data-i18n="blogs.title">المدونة</h2>
+          <h3 data-i18n="blogs.heading">أحدث المقالات</h3>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3 ">
+            <div class="card  rounded-0 overflow-hidden  h-100">
+              <img src="./assets/images/blogs/1.jpg" class="card-img-top rounded-0" alt="صوب زراعية" style="height: 220px; object-fit: cover;"/>
+              <div class="card-body ">
+                <h5 class="card-title">الصوب الزراعية</h5>
+                <p class="card-text mt-2 small text-secondary">تعريف مختصر للبيوت المحمية ودورها في حماية المحاصيل.</p>
+                <a href="blog-details.html?id=1" class="blog-read-more"><span data-i18n="blogs.readMore">اقرأ المزيد</span><i class="fa-solid fa-arrow-right-long blog-read-more__icon" aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card  rounded-0 overflow-hidden  h-100 ">
+              <img src="./assets/images/blogs/2.jpg" class="card-img-top rounded-0" alt="مقال" style="height: 220px; object-fit: cover;" />
+              <div class="card-body ">
+                <h5 class="card-title">الزراعة الهوائية (Aeroponics)</h5>
+                <p class="card-text mt-2 small text-secondary">توفير مياه يصل إلى حوالي 95٪ مقارنة بالزراعة التقليدية — موقعنا قريبًا في الشروق.</p>
+                <a href="blog-details.html?id=2" class="blog-read-more"><span data-i18n="blogs.readMore">اقرأ المزيد</span><i class="fa-solid fa-arrow-right-long blog-read-more__icon" aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card  rounded-0 overflow-hidden  h-100">
+              <img src="./assets/images/blogs/3.jpg" class="card-img-top rounded-0" alt="مقال" style="height: 220px; object-fit: cover;"  />
+              <div class="card-body ">
+                <h5  class="card-title">الصوبة الزراعية للمنازل وللمزارع</h5>
+                <p class="card-text mt-2 small text-secondary">من صوبة الحديقة إلى مشروع استثماري — خطوات، فوائد، وجدوى.</p>
+                <a href="blog-details.html?id=3" class="blog-read-more"><span data-i18n="blogs.readMore">اقرأ المزيد</span><i class="fa-solid fa-arrow-right-long blog-read-more__icon" aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card  rounded-0 overflow-hidden  h-100">
+              <img src="./assets/images/blogs/4.jpg" class="card-img-top rounded-0" alt="مقال" style="height: 220px; object-fit: cover;"  />
+              <div class="card-body">
+                <h5 class="card-title">أنواع الصوب الزراعية</h5>
+                <p class="card-text mt-2 small text-secondary">تكعيبات خشب، صوب بلا أنظمة مناخية، وصوب بتبريد وتدفئة — كما يُعرَف في السوق المصري.</p>
+                <a href="blog-details.html?id=4" class="blog-read-more"><span data-i18n="blogs.readMore">اقرأ المزيد</span><i class="fa-solid fa-arrow-right-long blog-read-more__icon" aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-5" data-aos="fade-up">
+          <div class="col-12">
+            <div class="text-center">
+              <a href="./blogs.html" class="btn hero-cta-btn px-4 py-3" data-i18n="blogsPage.more">المزيد</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- 
   ##################################################
   #                   Contact Us                   #
@@ -80,7 +251,83 @@
     <section
       class="contact-section py-5 px-md-5 "
       id="contact"
-    ></section>
+    >
+      <div class="container-fluid px-md-5 px-3 position-relative">
+        <div class="header-section text-center mb-4" data-aos="fade-down">
+          <h2 class="mb-3 text-white" data-i18n="contact.title">تواصل معنا</h2>
+          <h3 class="text-white mb-2" data-i18n="contact.heading">شركة أجريكا — مصر</h3>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-4" data-aos="fade-up">
+            <div class="contact-info rounded-3 p-4 text-center text-white h-100">
+              <div class="icon-circle mx-auto mb-2">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <h6 class="mb-2" data-i18n="footer.email">البريد الإلكتروني</h6>
+              <span class="d-block small" data-i18n="contact.emailPending">يُضاف البريد الإلكتروني لاحقًا</span>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="contact-info rounded-3 p-4 text-center text-white h-100">
+              <div class="icon-circle mx-auto mb-2">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <h6 class="mb-2" data-i18n="footer.phone">الهاتف</h6>
+              <a href="tel:+201123734611" class="d-block  " dir="ltr">+20 112 373 4611</a>
+              <a href="tel:+201068743552" class="d-block " dir="ltr">+20 106 874 3552</a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="contact-info rounded-3 p-4 text-center text-white h-100">
+              <div class="icon-circle mx-auto mb-2">
+                <i class="fa-brands fa-whatsapp"></i>
+              </div>
+              <h6 class="mb-2">WhatsApp</h6>
+              <a href="https://wa.me/201123734611" target="_blank" rel="noopener noreferrer" class="d-block text-white" dir="ltr">+20 112 373 4611</a>
+              <a href="https://wa.me/201068743552" target="_blank" rel="noopener noreferrer" class="d-block text-white" dir="ltr">+20 106 874 3552</a>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-md-8" data-aos="fade-up" data-aos-delay="100">
+            <form id="contact-form" class="contact-form-wrapper rounded-3 p-4 p-md-5">
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label class="form-label text-white small" data-i18n="contact.name">الاسم</label>
+                  <input type="text" class="form-control" placeholder="" required />
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label text-white small" data-i18n="contact.email">البريد الإلكتروني</label>
+                  <input type="email" class="form-control" placeholder="" />
+                </div>
+                <div class="col-12">
+                  <label class="form-label text-white small" data-i18n="contact.phone">رقم الهاتف</label>
+                  <input type="tel" class="form-control" placeholder="" />
+                </div>
+                <div class="col-12">
+                  <label class="form-label text-white small" data-i18n="contact.message">الرسالة</label>
+                  <textarea class="form-control" rows="4" placeholder="" required></textarea>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-send px-4 py-2 rounded">
+                    <i class="fas fa-paper-plane me-2"></i>
+                    <span data-i18n="contact.send">إرسال</span>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="map-wrapper h-100">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3453.85973832134!2d31.35159207510253!3d30.060701724671593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1458409f43bc67a9%3A0x9c499f646ad8a60b!2sAgrka!5e0!3m2!1sen!2seg!4v1742832843291!5m2!1sen!2seg"
+                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- 
   ##################################################
   #                  Footer                        #
@@ -125,27 +372,25 @@
     <script src="./assets/js/jquery-3.7.1.min.js"></script>
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/swiper-bundle.min.js"></script>
+    <script src="./assets/js/data.js"></script>
+    <script>
+      window.addEventListener("translationsready", function () {
+        renderIndexServiceCards();
+        renderIndexProjectsSwiper();
+      });
+    </script>
     <script src="./assets/js/slider.js"></script>
     <script src="./assets/js/main.js"></script>
     <script src="./assets/js/aos.js"></script>
     <script>
-      $("#heroDesktop").load("home/hero-desktop.html");
-      $("#heroMobile").load("home/hero-mobile.html");
-      $("#about").load("home/about-section.html");
-      $("#services").load("home/services-section.html");
-      $("#projects").load("home/projects-section.html");
-      $("#blogs").load("home/blogs-section.html");
-      $("#contact").load("home/contact-section.html");
+      AOS.init({
+        duration: 1000,
+        easing: 'ease-in-out',
+        offset: 100,
+      });
       $("#header").load("app/header.html");
       $("#footer").load("app/footer.html");
       $("#loader").load("app/loader.html");
-AOS.init({
-  duration: 1000,
-  easing: 'ease-in-out',
-  delay: 100,
-  offset: 100,
-});
-
     </script>
 
   </body>

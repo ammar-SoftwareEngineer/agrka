@@ -9,7 +9,8 @@
     "breadcrumbServices": "Services",
     "breadcrumbServiceDetails": "Service Details",
     "breadcrumbProjects": "Our Projects",
-    "breadcrumbBlogDetails": "Blog Details"
+    "breadcrumbBlogDetails": "Blog Details",
+    "breadcrumbArticles": "Articles"
   },
   "nav": {
     "home": "Home",
@@ -53,22 +54,6 @@
   "servicesPage": {
     "title": "Our services",
     "heading": "Our core divisions",
-    "d1Title": "Agrika Projects Division",
-    "d1Desc": "Design and implementation of agricultural projects<br>Professional feasibility studies<br>Farm design and planning<br>Integrated projects (crops – livestock – poultry)<br>Farm management and operation",
-    "d2Title": "Agrika Greenhouses Division",
-    "d2Desc": "Design and build plastic and glass greenhouses<br>Cooling, ventilation and climate control<br>Greenhouse operation to boost production",
-    "d3Title": "Hydroponics by Agrika",
-    "d3Desc": "Soilless and hydroponic systems: NFT, DWC, drip hydroponics, ebb &amp; flow, aeroponics, vertical farming. Nutrient programs, client training on operation and management, and smart solutions for high-quality output with minimal water and space.",
-    "d4Title": "Agrika Irrigation Systems",
-    "d4Desc": "Drip irrigation<br>Design and installation of complete irrigation networks<br>Better water-use efficiency",
-    "d5Title": "Plant Production Division",
-    "d5Desc": "Programs for field crops, vegetables and fruit<br>Production management and quality improvement<br>Higher efficiency and returns",
-    "d6Title": "Animal &amp; Poultry Production",
-    "d6Desc": "Poultry, duck, sheep and cattle farms<br>Feeding and health management programs<br>Full veterinary supervision",
-    "d7Title": "Agrika Training Academy",
-    "d7Desc": "Professional courses on hydroponics, greenhouses, modern farm management, crop production, feasibility studies and agricultural marketing. Hands-on training with recognized certificates for investors and growers.",
-    "d8Title": "Agrika Crop Marketing Division",
-    "d8Desc": "Commission-based marketing and sales for growers: vegetables, fruit and field crops, linking producers with traders and exporters, negotiating the best prices, fast off-take, and export support to open new markets.",
     "more": "View more",
     "detail": {
       "sidebarServicesTitle": "Service types",
@@ -92,175 +77,28 @@
     }
   },
   "blogsPage": {
-    "more": "View more"
+    "more": "View more",
+    "intro": "Articles on greenhouses, soilless growing, and plant production — open a post for the full read."
   },
   "projectsPage": {
     "title": "Our projects",
     "heading": "Work in the field",
     "intro": "A dedicated space for real photos and case studies (modern greenhouses, NFT and DWC hydroponics, crop and livestock farms, irrigation networks, and crop marketing) to build trust.",
-    "card1Title": "Modern greenhouse projects",
-    "card1Desc": "Plastic and glass structures with climate control and irrigation.",
-    "card2Title": "NFT & DWC hydroponic systems",
-    "card2Desc": "Design and operation of high-yield soilless systems.",
-    "card3Title": "Farms, irrigation & marketing",
-    "card3Desc": "Crop and livestock production, drip networks, and crop sales.",
     "viewAll": "View all",
-    "project1Title": "Vertical farming project at Simi Hydroponic",
-    "project2Title": "O ROOTS project in Hurghada",
-    "project3Title": "Agro Ford project in the Wadi al-Jadid governorate",
-    "project4Title": "Z project in Mansoura - Giza",
-    "project5Title": "Makadi Pharm project in Ahmed Arabi - Al-Obour",
-    "project6Title": "Practical training at the sites",
-    "project7Title": "Ero Bonik vertical farming"
+    "more": "View more",
+    "galleryHeading": "Photo gallery",
+    "notFound": "This project is not available.",
+    "sidebarTitle": "All projects"
   },
-  "services": [
-    {
-      "id": 1,
-      "title": "Agrika Projects Division",
-      "description": "Design and implementation of agricultural projects, feasibility studies, and farm planning.",
-      "icon": "fa-solid fa-diagram-project",
-      "details": "<p>Design and implementation of agricultural projects<br>Professional feasibility studies<br>Farm design and planning<br>Integrated projects (crops – livestock – poultry)<br>Farm management and operation</p>",
-      "extended": "<p>We turn ideas into clear execution documents: master layouts, quantity estimates, and a phased timeline you can track monthly. When needed, we align crop and livestock modules to share inputs (water, feed, energy) and reduce cost.</p><p>After go-live, optional follow-up packages (field visits, production KPIs, operational tweaks) help sustain returns.</p>",
-      "highlights": "<ul class=\"mb-0 ps-3\"><li>Documented economic &amp; technical feasibility</li><li>Integrated crop / livestock / poultry design</li><li>Contractor &amp; supplier coordination on request</li><li>Operation plans with suggested KPIs</li></ul>",
-      "scope": "<p>Typically covers site visit, soil &amp; water data (as applicable), concept design, indicative BOQ, and supporting documents for finance or partnerships.</p>",
-      "process": "<ol class=\"mb-0 ps-3\"><li>Brief, goals, and budget envelope</li><li>Site survey and data collection</li><li>Design options and cost bands</li><li>Final layout and execution support to handover</li></ol>",
-      "image": "./assets/images/services/1.jpg"
-    },
-    {
-      "id": 2,
-      "title": "Agrika Greenhouses Division",
-      "description": "Plastic and glass greenhouses with climate and ventilation systems.",
-      "icon": "fa-solid fa-house-chimney",
-      "details": "<p>Design and build plastic and glass greenhouses<br>Cooling, ventilation and climate control<br>Greenhouse operation to boost production</p>",
-      "extended": "<p>Cover type and structure follow local climate and crop (vegetables, flowers, seedlings, etc.). We size ventilation, shading, and irrigation to limit heat stress.</p><p>Seasonal run-books and maintenance notes for nets, fans, and controllers are included.</p>",
-      "highlights": "<ul class=\"mb-0 ps-3\"><li>Plastic or glass to match budget</li><li>Climate stack: cooling, heating, humidity</li><li>Integration with irrigation &amp; drainage</li><li>Operator training for daily checks</li></ul>",
-      "scope": "<p>From first study to handover: bay sizing, paths, storage bays, and utility tie-ins for power and water. Optional sensors can be added later.</p>",
-      "process": "<ol class=\"mb-0 ps-3\"><li>Crop choice and target area</li><li>Engineering design and budget bands</li><li>Build supervision for mechanical systems</li><li>Commissioning and short O&amp;M guide</li></ol>",
-      "image": "./assets/images/services/2.jpg"
-    },
-    {
-      "id": 3,
-      "title": "Hydroponics by Agrika",
-      "description": "Soilless systems, nutrient programs, and hands-on training.",
-      "icon": "fa-solid fa-water",
-      "details": "<p>Soilless and hydroponic systems: NFT, DWC, drip hydroponics, ebb &amp; flow, aeroponics, vertical farming. Nutrient programs, client training on operation and management.</p>",
-      "extended": "<p>We match crop, footprint, and budget to the right system (e.g. NFT for leafy greens). EC/pH schedules and common deficiency symptoms are explained clearly.</p><p>Where suitable we reduce water use via recirculation, with a periodic sanitation plan for tanks and lines.</p>",
-      "highlights": "<ul class=\"mb-0 ps-3\"><li>NFT, DWC, drip hydro, ebb &amp; flow</li><li>Nutrient recipes and correction tables</li><li>Vertical layouts when space is tight</li><li>Hands-on daily monitoring training</li></ul>",
-      "scope": "<p>Unit supply or custom design, pumps &amp; timers, commissioning, and training for the crop lead.</p>",
-      "process": "<ol class=\"mb-0 ps-3\"><li>System &amp; crop selection</li><li>Hydraulic layout and tank sizing</li><li>Install and trial run</li><li>Short weekly support, then O&amp;M handover</li></ol>",
-      "image": "./assets/images/services/3.jpg"
-    },
-    {
-      "id": 4,
-      "title": "Agrika Irrigation Systems",
-      "description": "Drip irrigation and complete networks for better water efficiency.",
-      "icon": "fa-solid fa-faucet-drip",
-      "details": "<p>Drip irrigation<br>Design and installation of complete irrigation networks<br>Better water-use efficiency</p>",
-      "extended": "<p>Water demand is sized from soil, crop, and climate. We zone the field for easier maintenance and partial shutdown.</p><p>Filtration and, when justified, fertigation options are proposed with clear cost/benefit.</p>",
-      "highlights": "<ul class=\"mb-0 ps-3\"><li>Field and greenhouse drip</li><li>Main &amp; lateral layouts, valves</li><li>Pressure balance across laterals</li><li>Annual water demand estimates</li></ul>",
-      "scope": "<p>Site sketch, network plan, indicative BOQ, and install supervision or contractor coordination.</p>",
-      "process": "<ol class=\"mb-0 ps-3\"><li>Areas and water source data</li><li>Hydraulic draft design</li><li>Build and pressure test</li><li>Handover with suggested irrigation calendar</li></ol>",
-      "image": "./assets/images/services/4.jpg"
-    },
-    {
-      "id": 5,
-      "title": "Plant Production Division",
-      "description": "Programs for field crops, vegetables and fruit with quality focus.",
-      "icon": "fa-solid fa-seedling",
-      "details": "<p>Programs for field crops, vegetables and fruit<br>Production management and quality improvement<br>Higher efficiency and returns</p>",
-      "extended": "<p>Programs cover the crop calendar, fertilization and safe IPM, and quality markers (size, colour, shelf life). We can link output to marketing channels when needed.</p><p>Optional seasonal visits adjust rates or irrigation timing to real weather.</p>",
-      "highlights": "<ul class=\"mb-0 ps-3\"><li>Field crops, vegetables, fruit</li><li>Production &amp; quality follow-up</li><li>Less waste and fewer common pest hits</li><li>Lightweight seasonal reports</li></ul>",
-      "scope": "<p>Technical guidance, suggested input lists, and follow-up on critical growth stages as agreed.</p>",
-      "process": "<ol class=\"mb-0 ps-3\"><li>Crop and area definition</li><li>Season plan and inputs</li><li>Field follow-up</li><li>Harvest review and next-season notes</li></ol>",
-      "image": "./assets/images/services/5.jpg"
-    },
-    {
-      "id": 6,
-      "title": "Animal &amp; Poultry Production",
-      "description": "Poultry, sheep and cattle farms with full veterinary supervision.",
-      "icon": "fa-solid fa-cow",
-      "details": "<p>Poultry, duck, sheep and cattle farms<br>Feeding and health management programs<br>Full veterinary supervision</p>",
-      "extended": "<p>Ventilation, waste handling, and preventive health reduce flock/herd stress. We align feeding with output (eggs, meat, milk) and operating cost.</p><p>Vaccination and parasite-control calendars follow approved protocols and farm conditions.</p>",
-      "highlights": "<ul class=\"mb-0 ps-3\"><li>Poultry, duck, sheep, cattle</li><li>Feed programs and conversion</li><li>Preventive health follow-up</li><li>Capacity and batch planning</li></ul>",
-      "scope": "<p>Pen layout, movement flow, water and feed points, and environmental needs per species.</p>",
-      "process": "<ol class=\"mb-0 ps-3\"><li>Species and target capacity</li><li>Shed plan and services</li><li>Gradual stocking</li><li>Weekly then monthly checks</li></ol>",
-      "image": "./assets/images/services/6.jpg"
-    },
-    {
-      "id": 7,
-      "title": "Agrika Training Academy",
-      "description": "Certified courses in hydroponics, greenhouses, and farm management.",
-      "icon": "fa-solid fa-graduation-cap",
-      "details": "<p>Professional courses on hydroponics, greenhouses, modern farm management, crop production, feasibility studies and agricultural marketing. Hands-on training with recognized certificates.</p>",
-      "extended": "<p>Sessions blend compact lectures with practical demos or training rigs. We focus on common operating mistakes and how to read key metrics (humidity, EC, daily yield).</p><p>Separate tracks for new investors and for growers upgrading an existing farm.</p>",
-      "highlights": "<ul class=\"mb-0 ps-3\"><li>Hydroponics, greenhouses, farm management</li><li>Feasibility &amp; agricultural marketing</li><li>Hands-on labs and attendance certificates</li><li>Q&amp;A and short post-course support</li></ul>",
-      "scope": "<p>Course schedules, simplified handouts, and optional hand-off to Agrika technical teams for later consulting.</p>",
-      "process": "<ol class=\"mb-0 ps-3\"><li>Pick your learning track</li><li>Theory + practice</li><li>Quick assessment and feedback</li><li>Certificate and next-step advice</li></ol>",
-      "image": "./assets/images/services/7.jpg"
-    },
-    {
-      "id": 8,
-      "title": "Agrika Crop Marketing Division",
-      "description": "Commission-based sales linking growers with traders and exporters.",
-      "icon": "fa-solid fa-handshake",
-      "details": "<p>Commission-based marketing and sales for growers: vegetables, fruit and field crops, linking producers with traders and exporters, negotiating the best prices, fast off-take, and export support.</p>",
-      "extended": "<p>We help with sampling, packing, and delivery windows that match market demand. For export we coordinate basic inspection and paperwork requirements with the right parties.</p><p>Commission terms are agreed upfront with transparent pricing and statements.</p>",
-      "highlights": "<ul class=\"mb-0 ps-3\"><li>Direct links to traders &amp; exporters</li><li>Negotiation and faster off-take</li><li>Export support when conditions allow</li><li>Clear, pre-agreed commission</li></ul>",
-      "scope": "<p>Crop quality and volume check, channel matching, and delivery follow-up as contracted.</p>",
-      "process": "<ol class=\"mb-0 ps-3\"><li>Register crop and location</li><li>Price indication and channel fit</li><li>Coordinate supply or export steps</li><li>Collection follow-up and feedback</li></ol>",
-      "image": "./assets/images/services/8.jpg"
-    }
-  ],
-  "projects": [
-    {
-      "id": 1,
-      "title": "Modern greenhouse projects",
-      "description": "Plastic and glass structures with climate control and irrigation.",
-      "details": "<p>Implementation of modern greenhouses with cooling, ventilation, and precision irrigation to boost yield and crop quality.</p>",
-      "image": "./assets/images/projects/project-1.jpg"
-    },
-    {
-      "id": 2,
-      "title": "Advanced hydroponic systems",
-      "description": "Design and operation of high-yield soilless systems.",
-      "details": "<p>NFT and deep water culture systems with team training on nutrient management and controlled environments.</p>",
-      "image": "./assets/images/projects/project-2.jpg"
-    },
-    {
-      "id": 3,
-      "title": "Farms, irrigation &amp; marketing",
-      "description": "Crop and livestock production, drip networks, and crop marketing.",
-      "details": "<p>Integrated projects covering production, irrigation networks, and follow-up marketing of the harvest.</p>",
-      "image": "./assets/images/projects/project-3.jpg"
-    }
-  ],
-  "articles": [
-    {
-      "id": 1,
-      "title": "The future of hydroponics in Egypt",
-      "description": "How technology reduces water use while increasing output.",
-      "details": "<p>Hydroponics offers finer control over nutrition and climate, and scales well for investors who want gradual expansion.</p>",
-      "image": "https://placehold.co/800x450/1a3d1a/fff?text=Article+1"
-    },
-    {
-      "id": 2,
-      "title": "Choosing the right greenhouse system",
-      "description": "Climate, crop type, and budget before you decide.",
-      "details": "<p>Greenhouse choice depends on crop, local climate, and operating budget. A feasibility study and a clear maintenance plan are essential.</p>",
-      "image": "https://placehold.co/800x450/0d2e0d/fff?text=Article+2"
-    },
-    {
-      "id": 3,
-      "title": "Agricultural marketing: from field to market",
-      "description": "Connecting farmers with the right channels for fair pricing.",
-      "details": "<p>Early marketing planning reduces risk. Working with trusted networks helps move produce quickly, including export when needed.</p>",
-      "image": "https://placehold.co/800x450/1f4a1f/fff?text=Article+3"
-    }
-  ],
   "blogs": {
     "title": "Blog",
     "heading": "Latest articles",
     "readMore": "Read more"
+  },
+  "blogDetails": {
+    "title": "Article details",
+    "notFound": "This article is not available.",
+    "sidebarTitle": "Articles"
   },
   "contact": {
     "title": "Contact us",
