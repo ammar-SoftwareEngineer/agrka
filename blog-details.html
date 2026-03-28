@@ -17,11 +17,23 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/media.css" />
 
+    <!-- google font  -->
+
     <title>Agrka</title>
   </head>
 
-  <body>
+  <body class="page-blog-details">
+    <!-- 
+  ##################################################
+  #                   Loading                      #
+  ##################################################
+-->
     <div class="loading" id="loader"></div>
+    <!-- 
+  ##################################################
+  #                   home                         #
+  ##################################################
+-->
     <header class="header" id="header"></header>
 
     <section class="hero-pages position-relative d-flex align-items-end">
@@ -50,6 +62,11 @@
       </div>
     </section>
 
+    <!-- 
+  ##################################################
+  #              Blog details                      #
+  ##################################################
+-->
     <section class="sd py-5 px-md-5">
       <div class="container-fluid px-md-5 px-3 py-4">
         <div id="article-detail-empty" class="text-center text-muted py-5">
@@ -105,7 +122,7 @@
                   </form>
                 </div>
   
-                <div class="sd-call text-center p-3 mt-auto flex-shrink-0 rounded-0">
+                <div class="sd-call text-center p-3 mt-auto flex-shrink-0 rounded-0 ">
                   <div class="sd-call__icon d-flex align-items-center justify-content-center mx-auto mb-2 rounded-0" aria-hidden="true">
                     <i class="fas fa-phone"></i>
                   </div>
@@ -116,18 +133,18 @@
               </div>
             </aside>
             <div class="col-lg-9 order-1 order-lg-2">
-              <div class="sd-main ">
-                <div class="w-100">
+              <div class="sd-main blog-detail-main">
+                <figure class="blog-detail-main__media mb-0">
                   <img
                     id="detail-image"
                     src=""
                     alt=""
-                    class="w-100 d-block object-fit-cover rounded-0"
-                    style="max-height: 500px"
+                    class="blog-detail-main__img"
                     loading="lazy"
+                    decoding="async"
                   />
-                </div>
-                <article class="sd-article p-md-5 py-4">
+                </figure>
+                <article class="sd-article blog-detail-main__article">
                   <header class="sd-article__header">
                     <h2 id="detail-title" class="sd-article__title fw-bold"></h2>
                     <div id="detail-description" class="sd-article__lead"></div>
@@ -141,7 +158,18 @@
       </div>
     </section>
 
+    <!-- 
+  ##################################################
+  #                  Footer                        #
+  ##################################################
+-->
     <footer id="footer" class="shadow-lg"></footer>
+
+    <!-- 
+  ##################################################
+  #                  SOCIAL ICONS                  #
+  ##################################################
+-->
 
     <div
       class="social-icon position-fixed bottom-0 d-flex flex-column gap-1 z-3 wow fadeInRight"
