@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="shortcut icon"
-      href="./assets/images/logo.png"
+      href="./assets/images/logo/logo.png"
       type="image/x-icon"
     />
 
@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
 
     <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./assets/css/aos.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/media.css" />
     <!-- google font  -->
@@ -59,7 +60,95 @@
   #                 About Us                       #
   ##################################################
 -->
+<section class="about-section py-5 px-md-5" id="about">
+  <div class="container-fluid px-md-5 px-3 py-5 position-relative" style="z-index: 1">
+    <div class="row align-items-center g-4 mb-5">
+      <div class="col-lg-6 order-lg-2" data-aos="fade-left" data-aos-duration="900">
+        <div class="about-image about-showcase-img">
+          <img
+            src="./assets/images/about/about2.jpg"
+            alt="أجريكا — حلول زراعية"
+            class="rounded-0 w-100"
+          />
+        </div>
+      </div>
+      <div class="col-lg-6 order-lg-1" data-aos="fade-right" data-aos-duration="900">
+        <div class="header-section mb-4" data-aos="fade-up" data-aos-delay="50">
+          <h2 class="mb-2" data-i18n="about.title">من نحن</h2>
+          <h3 class="h4 text-main" data-i18n="about.heading">أجريكا</h3>
+        </div>
+        <p class="mb-3" data-i18n="about.intro1" data-aos="fade-up" data-aos-delay="100"></p>
+        <p class="mb-3" data-i18n="about.intro2" data-aos="fade-up" data-aos-delay="150"></p>
+        <p class="mb-0 fw-semibold text-main" data-i18n="about.pipelineTitle" data-aos="fade-up" data-aos-delay="200"></p>
+        <p class="mb-3" data-i18n="about.pipelineLine" data-aos="fade-up" data-aos-delay="250"></p>
+        <p class="mb-0" data-i18n="about.intro3" data-aos="fade-up" data-aos-delay="300"></p>
+      </div>
+    </div>
 
+    <!-- Why Agrika — صورة يسار، نص يمين (عكس المقدمة) -->
+    <div class="row align-items-center g-5 mb-5">
+      <div class="col-lg-6 order-lg-1" data-aos="fade-right" data-aos-duration="900">
+        <div class="about-image about-showcase-img">
+          <img
+            src="./assets/images/about/about1.jpg"
+            alt=""
+            class="rounded-0 w-100"
+            onerror="this.onerror=null;this.src='./assets/images/about/about2.jpg'"
+          />
+        </div>
+      </div>
+      <div class="col-lg-6 order-lg-2" data-aos="fade-left" data-aos-duration="900">
+        <div class="header-section mb-4" data-aos="fade-up" data-aos-delay="50">
+        
+          <h2 class="mb-0" data-i18n="about.whyHeading">لماذا تختار Agrika؟</h2>
+        </div>
+        <div data-i18n="about.whyPointsHtml" data-aos="fade-up" data-aos-delay="100"></div>
+      </div>
+    </div>
+
+    <!-- رؤيتنا — نص يسار، صورة يمين (مثل المقدمة) -->
+    <div class="row align-items-center g-5 mb-5">
+      <div class="col-lg-6 order-lg-2" data-aos="fade-left" data-aos-duration="900">
+        <div class="about-image about-showcase-img">
+          <img
+            src="./assets/images/about/about3.jpg"
+            alt=""
+            class="rounded-0 w-100"
+            onerror="this.onerror=null;this.src='./assets/images/about/about2.jpg'"
+          />
+        </div>
+      </div>
+      <div class="col-lg-6 order-lg-1" data-aos="fade-right" data-aos-duration="900">
+        <div class="header-section mb-4" data-aos="fade-up" data-aos-delay="50">
+        
+          <h2 class="mb-0" data-i18n="about.visionTitle">رؤيتنا</h2>
+        </div>
+        <p class="mb-0 lead text-secondary" data-i18n="about.visionText" data-aos="fade-up" data-aos-delay="100"></p>
+      </div>
+    </div>
+
+    <!-- رسالتنا — صورة يسار، نص يمين -->
+    <div class="row align-items-center g-5 mb-0">
+      <div class="col-lg-6 order-lg-1" data-aos="fade-right" data-aos-duration="900">
+        <div class="about-image about-showcase-img">
+          <img
+            src="./assets/images/about/about2.jpg"
+            alt=""
+            class="rounded-0 w-100"
+          />
+        </div>
+      </div>
+      <div class="col-lg-6 order-lg-2" data-aos="fade-left" data-aos-duration="900">
+        <div class="header-section mb-4" data-aos="fade-up" data-aos-delay="50">
+        
+          <h2 class="mb-0" data-i18n="about.missionTitle">رسالتنا</h2>
+        </div>
+        <p class="mb-3" data-i18n="about.missionIntro" data-aos="fade-up" data-aos-delay="100"></p>
+        <div data-i18n="about.missionHtml" data-aos="fade-up" data-aos-delay="150"></div>
+      </div>
+    </div>
+  </div>
+</section>
     <!-- 
   ##################################################
   #                  Footer                        #
@@ -112,5 +201,13 @@
     <script src="./assets/js/swiper-bundle.min.js"></script>
     <script src="./assets/js/aos.js"></script>
     <script src="./assets/js/main.js"></script>
+    <script>
+      AOS.init({
+        duration: 900,
+        easing: "ease-in-out",
+        once: true,
+        offset: 100,
+      });
+    </script>
   </body>
 </html>

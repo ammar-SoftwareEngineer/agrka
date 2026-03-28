@@ -41,15 +41,22 @@
     "pipelineTitle": "Our approach",
     "pipelineLine": "Study & planning – Implementation – Operation – Follow-up – Marketing – Training",
     "intro3": "Our expertise combines science with hands-on practice to deliver measurable results in the field.",
-    "visionTitle": "Our vision",
+    "visionEyebrow": "رؤيتنا",
+    "visionTitle": "Our Vision",
     "visionText": "To be among the best agricultural companies in Egypt, the Middle East and Africa in modern agriculture, smart farming, hydroponics, and professional agricultural marketing.",
-    "missionTitle": "Our mission",
-    "missionHtml": "<ul class=\"list-unstyled mb-0\"><li class=\"mb-2\">✔ Increase production</li><li class=\"mb-2\">✔ Reduce costs</li><li class=\"mb-2\">✔ Improve crop quality</li><li class=\"mb-2\">✔ Maximize profits</li><li class=\"mb-0\">✔ Preserve natural resources</li></ul>",
+    "missionEyebrow": "رسالتنا",
+    "missionTitle": "Our Mission",
+    "missionIntro": "Deliver innovative, practical and sustainable agricultural solutions that help investors and farmers to:",
+    "missionHtml": "<ul class=\"list-unstyled mb-0 about-checklist\"><li class=\"mb-2\">✔ Increase production</li><li class=\"mb-2\">✔ Reduce costs</li><li class=\"mb-2\">✔ Improve crop quality</li><li class=\"mb-2\">✔ Maximize profits</li><li class=\"mb-0\">✔ Preserve natural resources</li></ul>",
+    "whyEyebrow": "لماذا تختار أجريكا؟",
+    "whyHeading": "Why Agrika?",
     "whyTitle": "Why Agrika?",
+    "whyPointsHtml": "<ul class=\"list-unstyled mb-0 about-checklist\"><li class=\"mb-2\">✔ Strong hands-on experience in agricultural projects</li><li class=\"mb-2\">✔ End-to-end solutions from idea to sale</li><li class=\"mb-2\">✔ Latest modern and hydroponic farming technologies</li><li class=\"mb-2\">✔ Specialized engineering, consulting and veterinary team</li><li class=\"mb-2\">✔ Professional training academy</li><li class=\"mb-2\">✔ Strong local and export marketing network</li><li class=\"mb-2\">✔ Competitive pricing and high quality</li><li class=\"mb-0\">✔ Ongoing support after implementation</li></ul>",
     "whyHtml": "<div class=\"col-md-6\"><ul class=\"list-unstyled small mb-0\"><li class=\"mb-2\">✔ Strong hands-on experience in agricultural projects</li><li class=\"mb-2\">✔ End-to-end solutions from idea to sale</li><li class=\"mb-2\">✔ Latest modern and hydroponic farming technologies</li><li class=\"mb-2\">✔ Specialized engineering, consulting and veterinary team</li></ul></div><div class=\"col-md-6\"><ul class=\"list-unstyled small mb-0\"><li class=\"mb-2\">✔ Professional training academy</li><li class=\"mb-2\">✔ Strong local and export marketing network</li><li class=\"mb-2\">✔ Competitive pricing and high quality</li><li class=\"mb-0\">✔ Ongoing support after implementation</li></ul></div>",
     "founderTitle": "Founder & CEO",
     "founderName": "Eng. Karim Ali",
-    "founderBio": "Agricultural engineer specialized in designing, implementing and managing modern agricultural projects, with practical experience in greenhouses, hydroponics, crop and livestock production, and agricultural marketing. He leads Agrika with a clear vision to turn agriculture into a profitable, sustainable investment."
+    "founderBio": "Agricultural engineer specialized in designing, implementing and managing modern agricultural projects, with practical experience in greenhouses, hydroponics, crop and livestock production, and agricultural marketing. He leads Agrika with a clear vision to turn agriculture into a profitable, sustainable investment.",
+    "more": "Read more"
   },
   "servicesPage": {
     "title": "Our services",
@@ -93,7 +100,15 @@
   "blogs": {
     "title": "Blog",
     "heading": "Latest articles",
-    "readMore": "Read more"
+    "readMore": "Read more",
+    "homeArticle1Title": "Agricultural greenhouses (protected cultivation)",
+    "homeArticle1Desc": "Structures that protect plants from harsh weather and provide an ideal environment for growth year-round.",
+    "homeArticle2Title": "Aeroponics (soilless growing)",
+    "homeArticle2Desc": "Roots in open air, nutrient mist—often up to ~95% less water than conventional farming in well-run systems.",
+    "homeArticle3Title": "Greenhouses for homes and farms",
+    "homeArticle3Desc": "Home garden greenhouses and commercial greenhouse projects on farmland—steps, benefits, and economic feasibility.",
+    "homeArticle4Title": "Types of agricultural greenhouses",
+    "homeArticle4Desc": "Three common segments in Egypt: wood-post sheds, simple houses without climate systems, and houses with cooling, heating, and environmental control."
   },
   "blogDetails": {
     "title": "Article details",

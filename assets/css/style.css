@@ -748,9 +748,9 @@ body[dir="rtl"] {
         content: "";
         position: absolute;
         bottom: 0;
-        right: 0% !important;
+        left:50%   !important;
 
-
+display: none;
       }
     }
   }
@@ -769,6 +769,19 @@ body[dir="rtl"] {
     border-radius: 0;
     overflow: hidden;
     box-shadow: var(--shadow-soft);
+  }
+
+  & .about-checklist li {
+    line-height: 1.55;
+    padding-inline-start: 0.15rem;
+  }
+
+  & .about-section__eyebrow {
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    color: var(--text-muted);
+    text-transform: uppercase;
   }
 
   & .about-image {
