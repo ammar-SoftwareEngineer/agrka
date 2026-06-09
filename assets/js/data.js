@@ -286,7 +286,7 @@ function renderArticleCards(containerId) {
 // Home: first N services (division cards)
 // ============================================================
 function renderIndexServiceCards() {
-  renderServiceCards("index-services-cards", { variant: "division", limit: 4, delayStep: 80 });
+  renderServiceCards("index-services-cards", { variant: "division", limit: 8, delayStep: 80 });
 }
 
 // ============================================================
