@@ -490,6 +490,7 @@ body[dir="rtl"] {
         position: absolute;
         inset: 0;
         transform: scale(1.05);
+       
         transition: transform 7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
       }
 
@@ -649,6 +650,7 @@ body[dir="rtl"] {
       & .slide-image {
         position: absolute;
         inset: 0;
+        z-index: 1;
         transform: scale(1.05);
         transition: transform 7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
       }
@@ -677,6 +679,15 @@ body[dir="rtl"] {
     }
 
     & .hero-content-overlay {
+      direction: rtl;
+    }
+  }
+  & .hero-mobile {
+    & .swiper {
+      direction: ltr;
+    }
+
+    & .hero-content-overlay--mobile {
       direction: rtl;
     }
   }
