@@ -107,7 +107,9 @@
           "details": "<p>مشروع يجمع بين الكفاءة في استخدام المساحة والتحكم في الري والتغذية لتحسين الإنتاجية وجودة المخرجات.</p>",
           "image": "./assets/images/projects/project-1/1.webp",
           "gallery": [
-            "./assets/images/projects/project-1/1.webp"
+            "./assets/images/projects/project-1/1.webp",
+            "./assets/images/projects/project-1/2.jpg",
+            "./assets/images/projects/project-1/3.jpg"
           ]
         },
         {
@@ -117,7 +119,9 @@
           "details": "<p>مشروع O ROOTS بالغردقة يبرز قدرتنا على العمل في مواقع متنوعة مع مراعاة ظروف المناخ والتشغيل.</p>",
           "image": "./assets/images/projects/project-2/1.jpg",
           "gallery": [
-            "./assets/images/projects/project-2/1.jpg"
+            "./assets/images/projects/project-2/1.jpg",
+            "./assets/images/projects/project-2/2.jpg",
+            "./assets/images/projects/project-2/3.jpg"
           ]
         },
         {
@@ -127,7 +131,9 @@
           "details": "<p>تعاون مع شركة أجرو فرود في الوادي الجديد لتنفيذ متطلبات المشروع ومتابعة الأداء الميداني.</p>",
           "image": "./assets/images/projects/project-3/1.jpg",
           "gallery": [
-            "./assets/images/projects/project-3/1.jpg"
+            "./assets/images/projects/project-3/1.jpg",
+            "./assets/images/projects/project-3/2.jpg",
+            "./assets/images/projects/project-3/3.jpg"
           ]
         },
         {
@@ -137,7 +143,9 @@
           "details": "<p>مشروع شركة Z بالمنصورية يعكس خبرة الفريق في التنسيق والتنفيذ داخل المدن والمناطق المحيطة.</p>",
           "image": "./assets/images/projects/project-4/1.webp",
           "gallery": [
-            "./assets/images/projects/project-4/1.webp"
+            "./assets/images/projects/project-4/1.webp",
+            "./assets/images/projects/project-4/2.jpg",
+            "./assets/images/projects/project-4/3.jpg"
           ]
         },
         {
@@ -147,7 +155,9 @@
           "details": "<p>أعمال مع مكادي فارم تشمل التنفيذ والمتابعة لضمان جودة التشغيل وفق الخطة المتفق عليها.</p>",
           "image": "./assets/images/projects/project-5/1.jpg",
           "gallery": [
-            "./assets/images/projects/project-5/1.jpg"
+            "./assets/images/projects/project-5/1.jpg",
+            "./assets/images/projects/project-5/2.jpg",
+            "./assets/images/projects/project-5/3.webp"
           ]
         },
         {
@@ -157,7 +167,9 @@
           "details": "<p>جلسات تدريبية عملية في المواقع لرفع كفاءة التشغيل وضمان تطبيق الإجراءات الصحيحة يوميًا.</p>",
           "image": "./assets/images/projects/project-6/1.jpg",
           "gallery": [
-            "./assets/images/projects/project-6/1.jpg"
+            "./assets/images/projects/project-6/1.jpg",
+            "./assets/images/projects/project-6/2.jpg",
+            "./assets/images/projects/project-6/3.jpg"
           ]
         },
         {
@@ -167,7 +179,9 @@
           "details": "<p>مشروع ايرو بونيك للزراعة الرأسية يوضح تكامل الهيكل والري والتحكم في البيئة المغلقة.</p>",
           "image": "./assets/images/projects/project-7/1.jpg",
           "gallery": [
-            "./assets/images/projects/project-7/1.jpg"
+            "./assets/images/projects/project-7/1.jpg",
+            "./assets/images/projects/project-7/2.jpg",
+            "./assets/images/projects/project-7/3.jpg"
           ]
         }
       ],
@@ -372,7 +386,9 @@
           "details": "<p>A project that combines efficient use of space with managed irrigation and feeding to improve yield and output quality.</p>",
           "image": "./assets/images/projects/project-1/1.webp",
           "gallery": [
-            "./assets/images/projects/project-1/1.webp"
+            "./assets/images/projects/project-1/1.webp",
+            "./assets/images/projects/project-1/2.jpg",
+            "./assets/images/projects/project-1/3.jpg"
           ]
         },
         {
@@ -382,7 +398,9 @@
           "details": "<p>The O ROOTS Hurghada project highlights our ability to work across climates and operating conditions.</p>",
           "image": "./assets/images/projects/project-2/1.jpg",
           "gallery": [
-            "./assets/images/projects/project-2/1.jpg"
+            "./assets/images/projects/project-2/1.jpg",
+            "./assets/images/projects/project-2/2.jpg",
+            "./assets/images/projects/project-2/3.jpg"
           ]
         },
         {
@@ -392,7 +410,9 @@
           "details": "<p>Collaboration with Agro Ford in the New Valley to deliver project requirements and field follow-up.</p>",
           "image": "./assets/images/projects/project-3/1.jpg",
           "gallery": [
-            "./assets/images/projects/project-3/1.jpg"
+            "./assets/images/projects/project-3/1.jpg",
+            "./assets/images/projects/project-3/2.jpg",
+            "./assets/images/projects/project-3/3.jpg"
           ]
         },
         {
@@ -402,7 +422,9 @@
           "details": "<p>The Company Z Mansoura project reflects our coordination and delivery experience in urban and peri-urban sites.</p>",
           "image": "./assets/images/projects/project-4/1.webp",
           "gallery": [
-            "./assets/images/projects/project-4/1.webp"
+            "./assets/images/projects/project-4/1.webp",
+            "./assets/images/projects/project-4/2.jpg",
+            "./assets/images/projects/project-4/3.jpg"
           ]
         },
         {
@@ -412,7 +434,9 @@
           "details": "<p>Work with Makadi Farm includes implementation and follow-up to keep operations aligned with the agreed plan.</p>",
           "image": "./assets/images/projects/project-5/1.jpg",
           "gallery": [
-            "./assets/images/projects/project-5/1.jpg"
+            "./assets/images/projects/project-5/1.jpg",
+            "./assets/images/projects/project-5/2.jpg",
+            "./assets/images/projects/project-5/3.webp"
           ]
         },
         {
@@ -422,7 +446,9 @@
           "details": "<p>On-site practical sessions to improve day-to-day operations and correct procedures in the field.</p>",
           "image": "./assets/images/projects/project-6/1.jpg",
           "gallery": [
-            "./assets/images/projects/project-6/1.jpg"
+            "./assets/images/projects/project-6/1.jpg",
+            "./assets/images/projects/project-6/2.jpg",
+            "./assets/images/projects/project-6/3.jpg"
           ]
         },
         {
@@ -432,7 +458,9 @@
           "details": "<p>The Ero Bonik vertical farming project shows the integration of structure, irrigation, and environment control.</p>",
           "image": "./assets/images/projects/project-7/1.jpg",
           "gallery": [
-            "./assets/images/projects/project-7/1.jpg"
+            "./assets/images/projects/project-7/1.jpg",
+            "./assets/images/projects/project-7/2.jpg",
+            "./assets/images/projects/project-7/3.jpg"
           ]
         }
       ],

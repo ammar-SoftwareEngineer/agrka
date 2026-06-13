@@ -197,17 +197,15 @@
     <script src="./assets/js/jquery-3.7.1.min.js"></script>
     <script src="./assets/js/fancybox.umd.js"></script>
     <script src="./assets/js/data.js"></script>
-    <script>
-      window.addEventListener("translationsready", function () {
-        renderDetails();
-      });
-    </script>
 
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/swiper-bundle.min.js"></script>
     <script src="./assets/js/aos.js"></script>
     <script src="./assets/js/main.js"></script>
     <script>
+      window.addEventListener("translationsready", function () {
+        renderDetails();
+      });
       $("#header").load("app/header.html");
       $("#loader").load("app/loader.html");
       $("#footer").load("app/footer.html");

@@ -2461,6 +2461,9 @@ body[dir="rtl"] .blog-read-more:hover .blog-read-more__icon {
   transition: all 0.25s ease;
   top: 50%;
   margin-top: -24px;
+  & svg{
+    display: none;
+  }
 }
 
 .project-detail-swiper .swiper-button-prev::after,
@@ -2496,6 +2499,12 @@ body[dir="rtl"] .blog-read-more:hover .blog-read-more__icon {
 
 body[dir="rtl"] .project-detail-swiper {
   direction: ltr;
+}
+
+.project-detail-swiper--single .swiper-button-prev,
+.project-detail-swiper--single .swiper-button-next,
+.project-detail-swiper--single .swiper-pagination {
+  display: none !important;
 }
 
 /* ==============================

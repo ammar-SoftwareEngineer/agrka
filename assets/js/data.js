@@ -100,13 +100,16 @@ const fillProjectGallery = (item) => {
   const group = `project-${item.id}`;
   const cap = esc(item.title || "");
   const alt = esc(item.title || "");
+  const multi = urls.length > 1;
+
+  root.classList.toggle("project-detail-swiper--single", !multi);
 
   wrapper.innerHTML = urls
     .map(
-      (url) => `
+      (url, i) => `
     <div class="swiper-slide">
       <a href="${esc(url)}" class="project-detail-slide-link d-block w-100 h-100 overflow-hidden" data-fancybox="${group}" data-caption="${cap}">
-        <img src="${esc(url)}" alt="${alt}" class="project-detail-slide-img w-100 d-block" loading="lazy" />
+        <img src="${esc(url)}" alt="${alt} — ${i + 1}" class="project-detail-slide-img w-100 d-block" loading="lazy" />
       </a>
     </div>`
     )
@@ -117,9 +120,16 @@ const fillProjectGallery = (item) => {
       slidesPerView: 1,
       spaceBetween: 0,
       speed: 600,
-      grabCursor: true,
-      loop: urls.length > 2,
+      grabCursor: multi,
+      loop: multi,
       watchOverflow: true,
+      autoplay: multi
+        ? {
+            delay: 4000,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: true,
+          }
+        : false,
       pagination: {
         el: root.querySelector(".swiper-pagination"),
         clickable: true,
