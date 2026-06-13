@@ -2480,6 +2480,7 @@ body[dir="rtl"] .blog-read-more:hover .blog-read-more__icon {
 .project-detail-swiper .swiper-pagination {
   position: relative;
   margin-top: 1rem;
+  border-radius: 0;
   bottom: auto !important;
 }
 
@@ -2489,11 +2490,12 @@ body[dir="rtl"] .blog-read-more:hover .blog-read-more__icon {
   opacity: 1;
   background: rgba(var(--main-color-rgb), 0.35);
   transition: all 0.25s ease;
+  border-radius: 0;
 }
 
 .project-detail-swiper .swiper-pagination-bullet-active {
   width: 24px;
-  border-radius: 999px;
+  border-radius: 0;
   background: var(--second-color);
 }
 
