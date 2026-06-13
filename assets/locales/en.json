@@ -115,6 +115,10 @@
     "notFound": "This article is not available.",
     "sidebarTitle": "Articles"
   },
+  "bookModal": {
+    "buyNow": "Buy the Book Now",
+    "imageAlt": "Book cover — Agrika"
+  },
   "contact": {
     "title": "Contact us",
     "heading": "Agrika — Egypt",

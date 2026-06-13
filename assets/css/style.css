@@ -2497,3 +2497,74 @@ body[dir="rtl"] .blog-read-more:hover .blog-read-more__icon {
 body[dir="rtl"] .project-detail-swiper {
   direction: ltr;
 }
+
+/* ==============================
+   Book promo modal (popup)
+============================== */
+.book-promo-modal {
+  z-index: 10050 !important;
+}
+
+body.book-promo-open .modal-backdrop {
+  z-index: 10040 !important;
+}
+
+.book-promo-modal .modal-content {
+  overflow: hidden;
+  box-shadow: var(--shadow-lift);
+}
+
+.book-promo-modal__dialog {
+  max-width: 420px;
+}
+
+.book-promo-modal .modal-header {
+  position: absolute;
+  top: 0;
+  inset-inline-end: 0;
+  z-index: 2;
+
+}
+
+.book-promo-modal .btn-close {
+  background-color: rgba(255, 255, 255, 0.92);
+  border-radius: 50%;
+  padding: 0.65rem;
+  opacity: 1;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.book-promo-modal .btn-close:hover {
+  transform: scale(1.08);
+  background-color: var(--white-color);
+}
+
+.book-promo-modal__img {
+  display: block;
+  max-height: 50vh;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 0;
+}
+
+.book-promo-modal__cta {
+  font-size: 1.05rem;
+  padding-block: 0.85rem !important;
+}
+
+.book-promo-modal.show .modal-dialog {
+  animation: bookModalIn 0.45s ease;
+}
+
+@keyframes bookModalIn {
+  from {
+    opacity: 0;
+    transform: translateY(24px) scale(0.96);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}

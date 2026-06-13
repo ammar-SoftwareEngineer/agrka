@@ -52,6 +52,11 @@ function applyTranslations(dictionary) {
     const text = getValueByPath(dictionary, key);
     if (text) el.setAttribute("placeholder", text);
   });
+  document.querySelectorAll("[data-i18n-alt]").forEach((el) => {
+    const key = el.getAttribute("data-i18n-alt");
+    const text = getValueByPath(dictionary, key);
+    if (text) el.setAttribute("alt", text);
+  });
 }
 window.applyTranslations = applyTranslations;
 
