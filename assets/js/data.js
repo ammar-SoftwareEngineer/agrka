@@ -162,9 +162,7 @@ function renderServiceCards(containerId, opts) {
           <a href="service-details.html?id=${encodeURIComponent(item.id)}" class="text-decoration-none text-reset d-block h-100">
             <img src="${esc(item.image)}" class="card-img-top" alt="" loading="lazy" />
             <div class="card-body p-4 d-flex flex-column">
-              <div class="service-division-icon mb-3" aria-hidden="true">
-                <i class="${safeIcon(item.icon)} fa-xl"></i>
-              </div>
+          
               <h5 class="card-title mb-3 text-white">${esc(item.title)}</h5>
             </div>
           </a>
