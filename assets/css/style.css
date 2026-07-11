@@ -2422,7 +2422,7 @@ body[dir="rtl"] .blog-read-more:hover .blog-read-more__icon {
 }
 
 .project-detail-swiper {
-  --pd-slide-h: min(52vh, 520px);
+ height:60vh;
 }
 
 .project-detail-swiper .swiper-slide {

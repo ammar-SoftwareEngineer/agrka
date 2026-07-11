@@ -6,7 +6,6 @@
           "id": 1,
           "title": "قسم المشروعات الزراعية",
           "description": "تصميم وتنفيذ المشروعات الزراعية، دراسات جدوى، وتخطيط المزارع.",
-      
           "details": "<p>تصميم وتنفيذ المشروعات الزراعية<br>إعداد دراسات جدوى احترافية<br>تصميم وتخطيط المزارع<br>تنفيذ مشروعات متكاملة (نباتي – حيواني – داجني)<br>إدارة وتشغيل المزارع</p>",
           "extended": "<p>نعمل مع المستثمر والمزارع على تحويل الفكرة إلى وثائق تنفيذ واضحة: مخططات عامة، تقدير كميات، وجدول مراحل يمكن متابعته شهريًا. نراعي الربط بين الإنتاج النباتي والحيواني عند الحاجة لتقليل التكاليف المشتركة (علف، مياه، طاقة).</p><p>بعد التشغيل يمكن الاتفاق على باقات متابعة دورية (زيارات ميدانية، تقارير إنتاج، تعديلات تشغيلية) لضمان استدامة العائد.</p>",
           "highlights": "<ul class=\"mb-0 ps-3\"><li>دراسات جدوى اقتصادية وفنية موثقة</li><li>تصميم متكامل نباتي / حيواني / داجني</li><li>تنسيق مع مقاولين وموردين عند الطلب</li><li>خطط تشغيل ومؤشرات أداء مقترحة</li></ul>",
@@ -18,7 +17,6 @@
           "id": 2,
           "title": "قسم الصوب الزراعية",
           "description": "صوب بلاستيكية وزجاجية مع أنظمة مناخ وتهوية.",
-          
           "details": "<p>تصميم وتنفيذ صوب بلاستيكية وزجاجية<br>أنظمة تبريد وتهوية وتحكم مناخي<br>إدارة وتشغيل الصوب لزيادة الإنتاج</p>",
           "extended": "<p>نختار نوع الغطاء والهيكل وفق المناخ المحلي ونوع المحصول (خضر، زهور، شتلات، إلخ). نحدد سعة التهوية، التظليل، وأنظمة الري المناسبة لتقليل الإجهاد الحراري على النبات.</p><p>نوفر توصيات تشغيل موسمية (شتاء/صيف) وبرامج صيانة للشبكات والمراوح والتحكم الآلي.</p>",
           "highlights": "<ul class=\"mb-0 ps-3\"><li>صوب بلاستيك أو زجاج حسب الميزانية</li><li>تحكم مناخي: تبريد، تدفئة، رطوبة</li><li>تكامل مع شبكات الري والصرف</li><li>تدريب فريق التشغيل على المتابعة اليومية</li></ul>",
@@ -30,7 +28,6 @@
           "id": 3,
           "title": "الزراعة المائية",
           "description": "أنظمة بدون تربة وبرامج تغذية وتدريب عملي.",
-      
           "details": "<p>أنظمة الزراعة المائية والزراعة بدون تربة، ومنها: نظام فيلم المغذيات، والزراعة في الماء العميق، والري بالتنقيط المائي، ونظام المد والجزر، والزراعة الهوائية، والزراعة الرأسية. إعداد برامج التغذية والمحاليل الغذائية، تدريب العملاء على التشغيل والإدارة.</p>",
           "extended": "<p>نبدأ بتحليل نوع المحصول والمساحة والميزانية لاختيار النظام الأنسب (NFT للخضر الورقي، DWC لبعض الأنواع، إلخ). نضبط جداول EC وpH ونشرح أعراض نقص العناصر الشائعة.</p><p>نركز على تقليل استهلاك المياه وإعادة تدوير المحلول حيث يناسب، مع خطة تعقيم دورية للخزانات والخطوط.</p>",
           "highlights": "<ul class=\"mb-0 ps-3\"><li>NFT، DWC، تنقيط مائي، مد وجزر</li><li>برامج محاليل وجداول تصحيح</li><li>زراعة رأسية عند ضيق المساحة</li><li>تدريب عملي على القياس اليومي</li></ul>",
@@ -42,7 +39,6 @@
           "id": 4,
           "title": "أنظمة الري الحديثة",
           "description": "ري بالتنقيط وشبكات ري متكاملة لرفع كفاءة المياه.",
-      
           "details": "<p>ري بالتنقيط<br>تصميم وتنفيذ شبكات ري متكاملة<br>تحسين كفاءة استخدام المياه</p>",
           "extended": "<p>نحسب احتياجات المياه حسب نوع التربة والمحصول والمناخ. نصمم تقسيمات قطاعات (Zones) لتسهيل الصيانة وإيقاف جزء من المشروع عند الحاجة.</p><p>نوصي بفلاتر مناسبة وأحيانًا حقن سماد عبر الري (Fertigation) مع توضيح الجدوى والتكلفة.</p>",
           "highlights": "<ul class=\"mb-0 ps-3\"><li>تنقيط حقلي وصوب</li><li>شبكات رئيسية وفرعية ومحابس</li><li>تحسين الضغط والتجانس على الخط</li><li>تقدير استهلاك المياه السنوي</li></ul>",
@@ -54,7 +50,6 @@
           "id": 5,
           "title": "الإنتاج النباتي",
           "description": "برامج محاصيل حقلية وخضر وفاكهة وتحسين الجودة.",
-   
           "details": "<p>برامج زراعة المحاصيل الحقلية والخضر والفاكهة<br>إدارة الإنتاج وتحسين الجودة<br>رفع كفاءة الإنتاج وزيادة العائد</p>",
           "extended": "<p>نضع برنامج زراعة يشمل التقويم الزراعي، برامج التسميد والمكافحة الآمنة، ومؤشرات جودة للمحصول (حجم، لون، صلاحية تخزين). نساعد في ربط الإنتاج بسوق التصريف عند الحاجة.</p><p>يمكن إضافة زيارات ميدانية موسمية لتعديل الجرعات أو مواعيد الري حسب الطقس الفعلي.</p>",
           "highlights": "<ul class=\"mb-0 ps-3\"><li>محاصيل حقلية وخضر وفاكهة</li><li>متابعة إنتاج وجودة</li><li>تقليل الهدر والإصابات الشائعة</li><li>تقارير موسمية بسيطة</li></ul>",
@@ -66,7 +61,6 @@
           "id": 6,
           "title": "الإنتاج الحيواني والداجني",
           "description": "مزارع دواجن وأغنام وأبقار مع إشراف بيطري.",
-          
           "details": "<p>إنشاء مزارع دواجن وبط وأغنام وأبقار<br>برامج تغذية وإدارة صحية<br>إشراف بيطري متكامل</p>",
           "extended": "<p>نراعي التهوية، إدارة النفايات، والبرامج الوقائية لتقليل الضغط على القطيع. ننسق بين التغذية والإنتاج (بيض، لحوم، ألبان حسب نوع المشروع) والتكاليف التشغيلية.</p><p>نوثق جداول تحصين ومكافحة طفيليات حسب بروتوكولات معتمدة وظروف المزرعة.</p>",
           "highlights": "<ul class=\"mb-0 ps-3\"><li>دواجن وبط وأغنام وأبقار</li><li>برامج تغذية وتحويل علفي</li><li>متابعة صحية ووقائية</li><li>تخطيط سعات ودورات إنتاج</li></ul>",
@@ -78,7 +72,6 @@
           "id": 7,
           "title": "أكاديمية التدريب الزراعي",
           "description": "كورسات معتمدة في الزراعة المائية والصوب وإدارة المزارع.",
-        
           "details": "<p>كورسات في الزراعة المائية والصوب وإدارة المزارع والإنتاج النباتي ودراسات الجدوى والتسويق الزراعي. تدريب عملي وشهادات معتمدة لتأهيل المستثمرين والمزارعين.</p>",
           "extended": "<p>البرامج تجمع بين محاضرات مكثفة وجلسات عمل ميدانية أو في نماذج تدريبية. نركز على أخطاء التشغيل الشائعة وكيفية قراءة المؤشرات (رطوبة، EC، إنتاج يومي).</p><p>يمكن تخصيص مسار للمستثمر الجديد وآخر للمزارع الذي يرفع كفاءة مشروع قائم.</p>",
           "highlights": "<ul class=\"mb-0 ps-3\"><li>زراعة مائية وصوب وإدارة مزارع</li><li>دراسات جدوى وتسويق زراعي</li><li>تطبيق عملي وشهادات حضور</li><li>جلسات أسئلة ومتابعة قصيرة</li></ul>",
@@ -90,7 +83,6 @@
           "id": 8,
           "title": "تسويق المحاصيل",
           "description": "تسويق بالعمولة وربط المنتجين بالتجار والمصدرين.",
-       
           "details": "<p>تسويق وبيع المحاصيل لصالح المزارعين بنظام العمولة: خضر وفاكهة ومحاصيل حقلية، ربط المنتجين بالتجار والمصدرين، التفاوض لأفضل سعر، تصريف الإنتاج بسرعة، ودعم التصدير وفتح أسواق جديدة.</p>",
           "extended": "<p>نساعد في ترتيب العينات، التعبئة، ومواعيد التسليم بما يتوافق مع طلب السوق. عند التصدير ننسق مع متطلبات الفحص والأوراق الأساسية مع الجهات المختصة حسب نوع الصفقة.</p><p>العمولة تُحدد بوضوح مسبقًا، مع شفافية في التسعير والمستخلصات.</p>",
           "highlights": "<ul class=\"mb-0 ps-3\"><li>ربط مباشر بتجار ومصدرين</li><li>تفاوض وتصريف سريع للكميات</li><li>دعم تصدير عند توفر الشروط</li><li>عمولة واضحة ومحددة مسبقًا</li></ul>",
@@ -105,11 +97,18 @@
           "title": "موقع زراعة رأسية سيمي هيدروبونيك",
           "description": "تنفيذ موقع زراعة رأسية بنظام سيمي هيدروبونيك مع ضبط بيئة النمو.",
           "details": "<p>مشروع يجمع بين الكفاءة في استخدام المساحة والتحكم في الري والتغذية لتحسين الإنتاجية وجودة المخرجات.</p>",
-          "image": "./assets/images/projects/project-1/1.webp",
+          "image": "./assets/images/projects/project1/1.webp",
           "gallery": [
-            "./assets/images/projects/project-1/1.webp",
-            "./assets/images/projects/project-1/2.jpg",
-            "./assets/images/projects/project-1/3.jpg"
+            "./assets/images/projects/project1/1.webp",
+            "./assets/images/projects/project1/2.webp",
+            "./assets/images/projects/project1/3.webp",
+            "./assets/images/projects/project1/4.webp",
+            "./assets/images/projects/project1/5.webp",
+            "./assets/images/projects/project1/6.webp",
+            "./assets/images/projects/project1/7.webp",
+            "./assets/images/projects/project1/8.webp",
+            "./assets/images/projects/project1/9.webp",
+            "./assets/images/projects/project1/10.webp"
           ]
         },
         {
@@ -117,11 +116,18 @@
           "title": "مشروع O ROOTS بالغردقة",
           "description": "أعمال تنفيذ ودعم فني في بيئة ساحلية.",
           "details": "<p>مشروع O ROOTS بالغردقة يبرز قدرتنا على العمل في مواقع متنوعة مع مراعاة ظروف المناخ والتشغيل.</p>",
-          "image": "./assets/images/projects/project-2/1.jpg",
+          "image": "./assets/images/projects/project2/7.webp",
           "gallery": [
-            "./assets/images/projects/project-2/1.jpg",
-            "./assets/images/projects/project-2/2.jpg",
-            "./assets/images/projects/project-2/3.jpg"
+            "./assets/images/projects/project2/1.webp",
+            "./assets/images/projects/project2/2.webp",
+            "./assets/images/projects/project2/3.webp",
+            "./assets/images/projects/project2/4.webp",
+            "./assets/images/projects/project2/5.webp",
+            "./assets/images/projects/project2/6.webp",
+            "./assets/images/projects/project2/7.webp",
+            "./assets/images/projects/project2/8.webp",
+            "./assets/images/projects/project2/9.webp"
+   
           ]
         },
         {
@@ -129,11 +135,20 @@
           "title": "مشروع شركة أجرو فرود بمحافظة الوادي الجديد",
           "description": "دعم زراعي وتشغيلي في بيئة صحراوية.",
           "details": "<p>تعاون مع شركة أجرو فرود في الوادي الجديد لتنفيذ متطلبات المشروع ومتابعة الأداء الميداني.</p>",
-          "image": "./assets/images/projects/project-3/1.jpg",
+          "image": "./assets/images/projects/project3/1.webp",
           "gallery": [
-            "./assets/images/projects/project-3/1.jpg",
-            "./assets/images/projects/project-3/2.jpg",
-            "./assets/images/projects/project-3/3.jpg"
+            "./assets/images/projects/project3/1.webp",
+            "./assets/images/projects/project3/2.webp",
+            "./assets/images/projects/project3/3.webp",
+            "./assets/images/projects/project3/4.webp",
+            "./assets/images/projects/project3/5.webp",
+            "./assets/images/projects/project3/6.webp",
+            "./assets/images/projects/project3/7.webp",
+            "./assets/images/projects/project3/8.webp",
+            "./assets/images/projects/project3/9.webp",
+            "./assets/images/projects/project3/10.webp",
+            "./assets/images/projects/project3/11.webp",
+            "./assets/images/projects/project3/12.webp"
           ]
         },
         {
@@ -141,11 +156,18 @@
           "title": "مشروع شركة Z بالمنصورية - جيزة",
           "description": "تنفيذ أعمال زراعية في نطاق جيزة.",
           "details": "<p>مشروع شركة Z بالمنصورية يعكس خبرة الفريق في التنسيق والتنفيذ داخل المدن والمناطق المحيطة.</p>",
-          "image": "./assets/images/projects/project-4/1.webp",
+          "image": "./assets/images/projects/project4/6.webp",
           "gallery": [
-            "./assets/images/projects/project-4/1.webp",
-            "./assets/images/projects/project-4/2.jpg",
-            "./assets/images/projects/project-4/3.jpg"
+            "./assets/images/projects/project4/1.webp",
+            "./assets/images/projects/project4/2.webp",
+            "./assets/images/projects/project4/3.webp",
+            "./assets/images/projects/project4/4.webp",
+            "./assets/images/projects/project4/5.webp",
+            "./assets/images/projects/project4/6.webp",
+            "./assets/images/projects/project4/7.webp",
+            "./assets/images/projects/project4/8.webp",
+            "./assets/images/projects/project4/9.webp"
+        
           ]
         },
         {
@@ -153,11 +175,16 @@
           "title": "شركة مكادي فارم - أحمد عرابي - العبور",
           "description": "مشروع ميداني في منطقة العبور.",
           "details": "<p>أعمال مع مكادي فارم تشمل التنفيذ والمتابعة لضمان جودة التشغيل وفق الخطة المتفق عليها.</p>",
-          "image": "./assets/images/projects/project-5/1.jpg",
+          "image": "./assets/images/projects/project5/5.webp",
           "gallery": [
-            "./assets/images/projects/project-5/1.jpg",
-            "./assets/images/projects/project-5/2.jpg",
-            "./assets/images/projects/project-5/3.webp"
+            "./assets/images/projects/project5/1.webp",
+            "./assets/images/projects/project5/2.webp",
+            "./assets/images/projects/project5/3.webp",
+            "./assets/images/projects/project5/4.webp",
+            "./assets/images/projects/project5/5.webp",
+            "./assets/images/projects/project5/6.webp",
+            "./assets/images/projects/project5/7.webp"
+        
           ]
         },
         {
@@ -165,11 +192,15 @@
           "title": "تدريبات عملية في المواقع",
           "description": "تدريب فرق العمل مباشرة على أرض الواقع.",
           "details": "<p>جلسات تدريبية عملية في المواقع لرفع كفاءة التشغيل وضمان تطبيق الإجراءات الصحيحة يوميًا.</p>",
-          "image": "./assets/images/projects/project-6/1.jpg",
+          "image": "./assets/images/projects/project6/2.webp",
           "gallery": [
-            "./assets/images/projects/project-6/1.jpg",
-            "./assets/images/projects/project-6/2.jpg",
-            "./assets/images/projects/project-6/3.jpg"
+            "./assets/images/projects/project6/1.webp",
+            "./assets/images/projects/project6/2.webp",
+            "./assets/images/projects/project6/3.webp",
+            "./assets/images/projects/project6/4.webp",
+            "./assets/images/projects/project6/5.webp",
+            "./assets/images/projects/project6/6.webp",
+            "./assets/images/projects/project6/7.webp"
           ]
         },
         {
@@ -177,11 +208,19 @@
           "title": "ايرو بونيك زراعة رأسية",
           "description": "نظام زراعة رأسية متكامل.",
           "details": "<p>مشروع ايرو بونيك للزراعة الرأسية يوضح تكامل الهيكل والري والتحكم في البيئة المغلقة.</p>",
-          "image": "./assets/images/projects/project-7/1.jpg",
+          "image": "./assets/images/projects/project7/11.webp",
           "gallery": [
-            "./assets/images/projects/project-7/1.jpg",
-            "./assets/images/projects/project-7/2.jpg",
-            "./assets/images/projects/project-7/3.jpg"
+            "./assets/images/projects/project7/1.webp",
+            "./assets/images/projects/project7/2.webp",
+            "./assets/images/projects/project7/3.webp",
+            "./assets/images/projects/project7/4.webp",
+            "./assets/images/projects/project7/5.webp",
+            "./assets/images/projects/project7/6.webp",
+            "./assets/images/projects/project7/7.webp",
+            "./assets/images/projects/project7/8.webp",
+            "./assets/images/projects/project7/9.webp",
+            "./assets/images/projects/project7/10.webp",
+            "./assets/images/projects/project7/11.webp"
           ]
         }
       ],
@@ -285,7 +324,6 @@
           "id": 1,
           "title": "Agrika Projects Division",
           "description": "Design and implementation of agricultural projects, feasibility studies, and farm planning.",
-      
           "details": "<p>Design and implementation of agricultural projects<br>Professional feasibility studies<br>Farm design and planning<br>Integrated projects (crops – livestock – poultry)<br>Farm management and operation</p>",
           "extended": "<p>We turn ideas into clear execution documents: master layouts, quantity estimates, and a phased timeline you can track monthly. When needed, we align crop and livestock modules to share inputs (water, feed, energy) and reduce cost.</p><p>After go-live, optional follow-up packages (field visits, production KPIs, operational tweaks) help sustain returns.</p>",
           "highlights": "<ul class=\"mb-0 ps-3\"><li>Documented economic &amp; technical feasibility</li><li>Integrated crop / livestock / poultry design</li><li>Contractor &amp; supplier coordination on request</li><li>Operation plans with suggested KPIs</li></ul>",
@@ -297,7 +335,6 @@
           "id": 2,
           "title": "Agrika Greenhouses Division",
           "description": "Plastic and glass greenhouses with climate and ventilation systems.",
-     
           "details": "<p>Design and build plastic and glass greenhouses<br>Cooling, ventilation and climate control<br>Greenhouse operation to boost production</p>",
           "extended": "<p>Cover type and structure follow local climate and crop (vegetables, flowers, seedlings, etc.). We size ventilation, shading, and irrigation to limit heat stress.</p><p>Seasonal run-books and maintenance notes for nets, fans, and controllers are included.</p>",
           "highlights": "<ul class=\"mb-0 ps-3\"><li>Plastic or glass to match budget</li><li>Climate stack: cooling, heating, humidity</li><li>Integration with irrigation &amp; drainage</li><li>Operator training for daily checks</li></ul>",
@@ -309,7 +346,6 @@
           "id": 3,
           "title": "Hydroponics by Agrika",
           "description": "Soilless systems, nutrient programs, and hands-on training.",
-  
           "details": "<p>Soilless and hydroponic systems: NFT, DWC, drip hydroponics, ebb &amp; flow, aeroponics, vertical farming. Nutrient programs, client training on operation and management.</p>",
           "extended": "<p>We match crop, footprint, and budget to the right system (e.g. NFT for leafy greens). EC/pH schedules and common deficiency symptoms are explained clearly.</p><p>Where suitable we reduce water use via recirculation, with a periodic sanitation plan for tanks and lines.</p>",
           "highlights": "<ul class=\"mb-0 ps-3\"><li>NFT, DWC, drip hydro, ebb &amp; flow</li><li>Nutrient recipes and correction tables</li><li>Vertical layouts when space is tight</li><li>Hands-on daily monitoring training</li></ul>",
@@ -321,7 +357,6 @@
           "id": 4,
           "title": "Agrika Irrigation Systems",
           "description": "Drip irrigation and complete networks for better water efficiency.",
-  
           "details": "<p>Drip irrigation<br>Design and installation of complete irrigation networks<br>Better water-use efficiency</p>",
           "extended": "<p>Water demand is sized from soil, crop, and climate. We zone the field for easier maintenance and partial shutdown.</p><p>Filtration and, when justified, fertigation options are proposed with clear cost/benefit.</p>",
           "highlights": "<ul class=\"mb-0 ps-3\"><li>Field and greenhouse drip</li><li>Main &amp; lateral layouts, valves</li><li>Pressure balance across laterals</li><li>Annual water demand estimates</li></ul>",
@@ -333,7 +368,6 @@
           "id": 5,
           "title": "Plant Production Division",
           "description": "Programs for field crops, vegetables and fruit with quality focus.",
-
           "details": "<p>Programs for field crops, vegetables and fruit<br>Production management and quality improvement<br>Higher efficiency and returns</p>",
           "extended": "<p>Programs cover the crop calendar, fertilization and safe IPM, and quality markers (size, colour, shelf life). We can link output to marketing channels when needed.</p><p>Optional seasonal visits adjust rates or irrigation timing to real weather.</p>",
           "highlights": "<ul class=\"mb-0 ps-3\"><li>Field crops, vegetables, fruit</li><li>Production &amp; quality follow-up</li><li>Less waste and fewer common pest hits</li><li>Lightweight seasonal reports</li></ul>",
@@ -345,7 +379,6 @@
           "id": 6,
           "title": "Animal &amp; Poultry Production",
           "description": "Poultry, sheep and cattle farms with full veterinary supervision.",
-
           "details": "<p>Poultry, duck, sheep and cattle farms<br>Feeding and health management programs<br>Full veterinary supervision</p>",
           "extended": "<p>Ventilation, waste handling, and preventive health reduce flock/herd stress. We align feeding with output (eggs, meat, milk) and operating cost.</p><p>Vaccination and parasite-control calendars follow approved protocols and farm conditions.</p>",
           "highlights": "<ul class=\"mb-0 ps-3\"><li>Poultry, duck, sheep, cattle</li><li>Feed programs and conversion</li><li>Preventive health follow-up</li><li>Capacity and batch planning</li></ul>",
@@ -357,7 +390,6 @@
           "id": 7,
           "title": "Agrika Training Academy",
           "description": "Certified courses in hydroponics, greenhouses, and farm management.",
- 
           "details": "<p>Professional courses on hydroponics, greenhouses, modern farm management, crop production, feasibility studies and agricultural marketing. Hands-on training with recognized certificates.</p>",
           "extended": "<p>Sessions blend compact lectures with practical demos or training rigs. We focus on common operating mistakes and how to read key metrics (humidity, EC, daily yield).</p><p>Separate tracks for new investors and for growers upgrading an existing farm.</p>",
           "highlights": "<ul class=\"mb-0 ps-3\"><li>Hydroponics, greenhouses, farm management</li><li>Feasibility &amp; agricultural marketing</li><li>Hands-on labs and attendance certificates</li><li>Q&amp;A and short post-course support</li></ul>",
@@ -369,7 +401,6 @@
           "id": 8,
           "title": "Agrika Crop Marketing Division",
           "description": "Commission-based sales linking growers with traders and exporters.",
-         
           "details": "<p>Commission-based marketing and sales for growers: vegetables, fruit and field crops, linking producers with traders and exporters, negotiating the best prices, fast off-take, and export support.</p>",
           "extended": "<p>We help with sampling, packing, and delivery windows that match market demand. For export we coordinate basic inspection and paperwork requirements with the right parties.</p><p>Commission terms are agreed upfront with transparent pricing and statements.</p>",
           "highlights": "<ul class=\"mb-0 ps-3\"><li>Direct links to traders &amp; exporters</li><li>Negotiation and faster off-take</li><li>Export support when conditions allow</li><li>Clear, pre-agreed commission</li></ul>",
@@ -384,11 +415,11 @@
           "title": "Vertical farming site at Simi Hydroponic",
           "description": "Vertical cultivation with semi-hydroponic control of irrigation and nutrition.",
           "details": "<p>A project that combines efficient use of space with managed irrigation and feeding to improve yield and output quality.</p>",
-          "image": "./assets/images/projects/project-1/1.webp",
+          "image": "./assets/images/projects/موقع زراعة رأسية سيمي هيدروبونيك/1.webp",
           "gallery": [
-            "./assets/images/projects/project-1/1.webp",
-            "./assets/images/projects/project-1/2.jpg",
-            "./assets/images/projects/project-1/3.jpg"
+            "./assets/images/projects/موقع زراعة رأسية سيمي هيدروبونيك/1.webp",
+            "./assets/images/projects/موقع زراعة رأسية سيمي هيدروبونيك/2.jpg",
+            "./assets/images/projects/موقع زراعة رأسية سيمي هيدروبونيك/3.jpg"
           ]
         },
         {
@@ -396,11 +427,11 @@
           "title": "O ROOTS project in Hurghada",
           "description": "Implementation and technical support in a coastal environment.",
           "details": "<p>The O ROOTS Hurghada project highlights our ability to work across climates and operating conditions.</p>",
-          "image": "./assets/images/projects/project-2/1.jpg",
+          "image": "./assets/images/projects/مشروع O ROOTS بالغردقة /1.jpg",
           "gallery": [
-            "./assets/images/projects/project-2/1.jpg",
-            "./assets/images/projects/project-2/2.jpg",
-            "./assets/images/projects/project-2/3.jpg"
+            "./assets/images/projects/مشروع O ROOTS بالغردقة /1.jpg",
+            "./assets/images/projects/مشروع O ROOTS بالغردقة /2.jpg",
+            "./assets/images/projects/مشروع O ROOTS بالغردقة /3.jpg"
           ]
         },
         {
@@ -408,11 +439,11 @@
           "title": "Agro Ford project in the New Valley governorate",
           "description": "Agricultural and operational support in an arid setting.",
           "details": "<p>Collaboration with Agro Ford in the New Valley to deliver project requirements and field follow-up.</p>",
-          "image": "./assets/images/projects/project-3/1.jpg",
+          "image": "./assets/images/projects/مشروع شركه أجرو فوود  بمحافظة الوادي الجديد /1.jpg",
           "gallery": [
-            "./assets/images/projects/project-3/1.jpg",
-            "./assets/images/projects/project-3/2.jpg",
-            "./assets/images/projects/project-3/3.jpg"
+            "./assets/images/projects/مشروع شركه أجرو فوود  بمحافظة الوادي الجديد /1.jpg",
+            "./assets/images/projects/مشروع شركه أجرو فوود  بمحافظة الوادي الجديد /2.jpg",
+            "./assets/images/projects/مشروع شركه أجرو فوود  بمحافظة الوادي الجديد /3.jpg"
           ]
         },
         {
@@ -420,11 +451,11 @@
           "title": "Company Z project in Mansoura — Giza",
           "description": "Agricultural works in the Giza area.",
           "details": "<p>The Company Z Mansoura project reflects our coordination and delivery experience in urban and peri-urban sites.</p>",
-          "image": "./assets/images/projects/project-4/1.webp",
+          "image": "./assets/images/projects/مشروع شركة Z بالمنصورية - جيزة /1.webp",
           "gallery": [
-            "./assets/images/projects/project-4/1.webp",
-            "./assets/images/projects/project-4/2.jpg",
-            "./assets/images/projects/project-4/3.jpg"
+            "./assets/images/projects/مشروع شركة Z بالمنصورية - جيزة /1.webp",
+            "./assets/images/projects/مشروع شركة Z بالمنصورية - جيزة /2.jpg",
+            "./assets/images/projects/مشروع شركة Z بالمنصورية - جيزة /3.jpg"
           ]
         },
         {
@@ -432,11 +463,11 @@
           "title": "Makadi Farm — Ahmed Orabi — Al-Obour",
           "description": "Field project in the Al-Obour area.",
           "details": "<p>Work with Makadi Farm includes implementation and follow-up to keep operations aligned with the agreed plan.</p>",
-          "image": "./assets/images/projects/project-5/1.jpg",
+          "image": "./assets/images/projects/شركة مكادي فارم - احمد عرابي - العبور/1.jpg",
           "gallery": [
-            "./assets/images/projects/project-5/1.jpg",
-            "./assets/images/projects/project-5/2.jpg",
-            "./assets/images/projects/project-5/3.webp"
+            "./assets/images/projects/شركة مكادي فارم - احمد عرابي - العبور/1.jpg",
+            "./assets/images/projects/شركة مكادي فارم - احمد عرابي - العبور/2.jpg",
+            "./assets/images/projects/شركة مكادي فارم - احمد عرابي - العبور/3.webp"
           ]
         },
         {
@@ -444,11 +475,11 @@
           "title": "Practical on-site training",
           "description": "Hands-on training directly at project locations.",
           "details": "<p>On-site practical sessions to improve day-to-day operations and correct procedures in the field.</p>",
-          "image": "./assets/images/projects/project-6/1.jpg",
+          "image": "./assets/images/projects/تدريبات عملية في المواقع/1.jpg",
           "gallery": [
-            "./assets/images/projects/project-6/1.jpg",
-            "./assets/images/projects/project-6/2.jpg",
-            "./assets/images/projects/project-6/3.jpg"
+            "./assets/images/projects/تدريبات عملية في المواقع/1.jpg",
+            "./assets/images/projects/تدريبات عملية في المواقع/2.jpg",
+            "./assets/images/projects/تدريبات عملية في المواقع/3.jpg"
           ]
         },
         {
@@ -456,11 +487,11 @@
           "title": "Ero Bonik vertical farming",
           "description": "Integrated vertical farming system.",
           "details": "<p>The Ero Bonik vertical farming project shows the integration of structure, irrigation, and environment control.</p>",
-          "image": "./assets/images/projects/project-7/1.jpg",
+          "image": "./assets/images/projects/ايرو بونيك زراعة رأسية/1.jpg",
           "gallery": [
-            "./assets/images/projects/project-7/1.jpg",
-            "./assets/images/projects/project-7/2.jpg",
-            "./assets/images/projects/project-7/3.jpg"
+            "./assets/images/projects/ايرو بونيك زراعة رأسية/1.jpg",
+            "./assets/images/projects/ايرو بونيك زراعة رأسية/2.jpg",
+            "./assets/images/projects/ايرو بونيك زراعة رأسية/3.jpg"
           ]
         }
       ],
